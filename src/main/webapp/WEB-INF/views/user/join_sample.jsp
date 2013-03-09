@@ -1,6 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<jsp:directive.include file="../includes.jsp"/>
-<jsp:directive.include file="../header.jsp"/>
 
 <link rel="stylesheet" type="text/css" href="https://user.daum.net/contents/css/common2009.css" />
 <link rel="stylesheet" type="text/css" href="https://user.daum.net/contents/css/join.css" />
@@ -395,7 +393,7 @@
 </div>
 </div>
 </div>
-<jsp:directive.include file="../cBottom.jsp"/>
+
 </div>
 </body>
 </html>

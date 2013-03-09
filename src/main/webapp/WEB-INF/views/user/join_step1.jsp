@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page session="false" %>
-<jsp:directive.include file="../includes.jsp"/>
-<jsp:directive.include file="../header.jsp"/>
+
 <div id="wrap_sub_content" class="mycafeList" ">
     <div id="daumContent">
     <div id="">

@@ -183,7 +183,7 @@
 </div>
 </div>            
 <br style="clear: both;">
-<jsp:directive.include file="../cBottom.jsp"/>
+<jsp:directive.include file="../include/footer.jspf"/>
  </div>
  </div>
 </body>

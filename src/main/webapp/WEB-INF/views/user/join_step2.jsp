@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<jsp:directive.include file="../includes.jsp"/>
-<jsp:directive.include file="../header.jsp"/>
+
 <jsp:directive.include file="../content.jsp"/>
 <script type="text/javascript">
 function getRootPos()
