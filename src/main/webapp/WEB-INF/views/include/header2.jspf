@@ -1,0 +1,187 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="ko-KR"> 
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ko-KR"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="ko-KR"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ko-KR"> <![endif]-->
+<!--[if gt IE 8]>     <html lang="ko-KR">  <!--<![endif]-->
+  <head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<title>INFOSHOP</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="http://www.bbc.co.uk/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap -->
+   <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/bootstrap/css/bootstrap.min.css">
+    
+    <!-- Custom UI -->
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/is_header.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/is_body.css">
+    		
+		<!-- DAUM UI -->
+		<!--
+		<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/common/daum/css/common.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/common/daum/css/default.css">
+		<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/common/daum/css/20130115090146.7.css">--> 
+		<script type="text/javascript" src="<%=request.getContextPath()%>/common/js/jquery-1.9.0.min.js"></script>
+		<script type="text/javascript" src="<%=request.getContextPath()%>/resources/bootstrap/js/bootstrap.min.js"></script>
+		<!-- 
+		<script type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/jigu.min.js"></script>
+		<script type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/common.js"></script>
+		<script type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/suggest.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/util_gzip.js"></script>
+		<script type="text/javascript" id="imideo-extension-info">var imideo_extension=true;</script>
+		<script charset="UTF-8" type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/tiara.min.js"></script>
+		<script id="PersonalScript" type="text/javascript" src="<%=request.getContextPath()%>/common/daum/cafe/allcount_hdn"></script>
+		<script type="text/javascript" charset="utf-8" defer="" id="breakingNewsSearchCallBack" src="<%=request.getContextPath()%>/common/daum/js/breakingnews.js"></script>
+		-->
+		
+  </head>  
+  <script type="text/javascript">
+
+  </script>
+  
+
+
+  <body id="page-docs" class="not-front not-logged-in no-sidebars" data-twttr-rendered="true">
+      <div id="page">
+          <!-- 헤더
+          ================================================== -->
+          <header id="header-outer">
+              <div id="header">
+                  <a href="/infoshop" id="logo" title="Home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+									<div class="h_btn-group">
+										  <a class="h_btn">뉴스</a>
+										  <a class="h_btn dropdown-toggle" data-toggle="dropdown">
+										    <span class="caret"></span>
+										  </a>
+										  <ul class="dropdown-menu">
+										    <!-- dropdown menu links -->
+										  </ul>
+									</div>
+                  <div class="h_btn-group">
+                      <a class="h_btn" href="/infoshop/table" title="정보">정보</a>
+                      <a class="h_btn dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <!-- dropdown menu links -->
+                      </ul>
+                  </div>
+                  <div class="h_btn-group">
+                      <a class="h_btn">스포츠</a>
+                      <a class="h_btn dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <!-- dropdown menu links -->
+                      </ul>
+                  </div>
+                  <div class="h_btn-group">
+                      <a class="h_btn">갤러리</a>
+                      <a class="h_btn dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <!-- dropdown menu links -->
+                      </ul>
+                  </div>
+                  <div class="h_btn-group">
+                      <a class="h_btn">포럼</a>
+                      <a class="h_btn dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <!-- dropdown menu links -->
+                      </ul>
+                  </div>
+                  <div class="h_btn-group">
+                      <a class="h_btn">더보기</a>
+                      <a class="h_btn dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li class="leaf first"><a href="/docs" title="">Overview</a></li>
+                          <li class="leaf"><a href="/docs/api/1.1" title="">REST API v1.1</a></li>
+                          <li class="leaf"><a href="/docs/streaming-apis" title="The Streaming APIs">Streaming API</a></li>
+                          <li class="leaf"><a href="/docs/twitter-for-websites" title="">Twitter for Websites</a></li>
+                          <li class="leaf"><a href="/docs/platform-objects" title="">Field Guide</a></li>
+                          <li class="leaf last"><a href="/docs/recent" title="">Recently updated</a></li>                   
+                      </ul>
+                  </div>
+                  <div class="h_btn-group">
+                      <a class="h_btn"></a>                                                  
+                  </div>
+                  <div class="h_btn-group">
+                                                                  
+                  </div>                                                     
+                  <ul id="title-nav" class="sf-js-enabled">
+		                  <form class="form-search">
+		                    <div class="input-append">
+		                    </div>
+		                  </form>
+		                  <a class="h_btn dropdown-toggle" data-toggle="dropdown">
+		                  <span class="add-on"><i class="nav-session"></i></span>
+		                  
+		                  <span class="caret"></span>
+		                  </a>
+		                  <ul class="dropdown-menu">
+		                                   
+                      <c:if test="${empty userInfo}">											
+											<li class="leaf last"><a href="#" onclick="jQuery('#popupLogs').css('display','block');" title="">Sign in</a></li>
+											</c:if>
+									    <c:if test="${!empty userInfo}">
+                        <li class="leaf last"><a href="#" onclick="jQuery('#popupLogs').css('display','block');" title="">${userInfo.id}</a></li>
+                        <li class="leaf last"><a href="/jsp/member/logout.jsp" >로그아웃</a></li>									    
+									    </c:if>											
+                  </ul>
+									<div id="popupLogs" class="popupLogs" style="display: none;">
+									  <!-- class="popupLogs" | class="popupLogs open" -->
+									   <span class="popupBg"></span>
+									   <div id="popupLog" class="popupLog">
+									     <button type="button" class="logclose" onclick="document.getElementById('popupLogs').style.display='none'"><span>Close Login Forms</span></button>
+									     <div style="overflow:hidden;"><div style="*zoom:1;padding:0px 0px 0px 0px !important; padding:none !important;">                      
+									                
+									<script type="text/javascript">
+									    var keep_signed_msg = "You will be still signed in even when the browser is closed.\n\nIt is not recommended to use this if you are using a public computer, for your personal information could be violated.";
+									    xAddEventListener(window, "load", function(){ doFocusUserId("fo_login_widget"); });
+									</script>
+									<div id="login" class="sunooLogbox" style="width:198px;">
+									<table border="0" cellspacing="0" cellpadding="0" align="left">
+									<tbody class="wtbox">
+									<tr><td class="tda" valign="top"></td><td class="tdb" valign="top"></td><td class="tdc" valign="top"></td></tr>
+									<tr><td class="tdd" valign="top"></td><td class="tde" valign="top"><form action="/infoshop/login" method="post" onsubmit="return procFilter(this, widget_login)" id="fo_login_widget" style="width:176px;"><input type="hidden" name="error_return_url" value="/themeboxwin8theme/5172"><input type="hidden" name="act" value=""><input type="hidden" name="mid" value="themeboxwin8theme"><input type="hidden" name="vid" value="">
+									  <div class="swidpwWrap" style="width:176px;">
+									    <div class="swidpw" style="width:116px;">
+									      <input name="id" type="text" title="user id" onfocus="this.className='swidIn';" onblur="if(!this.value) this.className='swidOut'" class="swidOut" style="width:111px;">
+									      <input name="password" type="password" title="password" onfocus="this.className='swpwIn';" onblur="if(!this.value) this.className='swpwOut'" class="swpwOut" style="width:111px;">
+									    </div>
+									      <input type="image" src="/widgets/login_sunoo/skins/sunoo_loginbox/images/buttonLogin.gif" alt="login" class="swbuttonLogin">
+									  </div>
+									    <ul class="swsave">
+									               <li class="keepcheck">
+									        <input type="checkbox" name="keep_signed" id="keepid" value="Y" onclick="if(this.checked) return confirm(keep_signed_msg);">
+									        <label for="keepid">Keep me signed in.</label></li>            </ul>
+									    <ul class="swhelp">
+									        <li><a href="/index.php?mid=themeboxwin8theme&amp;document_srl=5172&amp;act=dispMemberSignUpForm"><strong>Sign Up</strong></a></li>
+									        <li><a href="/index.php?mid=themeboxwin8theme&amp;document_srl=5172&amp;act=dispMemberFindAccount">Find Account Info</a></li>
+									        <li><a href="/index.php?mid=themeboxwin8theme&amp;document_srl=5172&amp;act=dispMemberResendAuthMail">Request for Activation Mail</a></li>
+									    </ul>
+									</form> </td><td class="tdf" valign="top"></td></tr>
+									<tr><td class="tdg" valign="top"></td><td class="tdh" valign="top"></td><td class="tdi" valign="top"></td></tr>
+									</tbody></table></div>
+									<script type="text/javascript">
+									  xAddEventListener(window, "load", function(){ doFocusUserId("fo_login_widget"); });
+									</script>
+									</div></div>
+									   </div></div>                  
+              </div>      
+          </header>
+          <!--  -->
+          <div id="header-wrapper">
+        
+         <h1>Website content planning made simple.</h1>
+        
+          </div>          
+          

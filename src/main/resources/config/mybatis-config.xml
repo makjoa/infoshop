@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "HTTP://mybatis.org/dtd/mybatis-3-config.dtd">  
+  
+<configuration>  
+    <settings>  
+        <setting name="cacheEnabled"                    value="false"/>  
+        <setting name="useGeneratedKeys"              value="true"/>  
+        <setting name="defaultExecutorType"           value="BATCH"/>  
+        <setting name="defaultStatementTimeout"     value="3000"/>  
+    </settings>  
+    
+    <typeAliases>
+        <typeAlias type="kr.pe.infoshop.board.model.Article" alias="Article"/>
+        <typeAlias type="kr.pe.infoshop.user.model.User" alias="User"/>
+    </typeAliases>
+  
+    <mappers>  
+        <mapper resource="kr/pe/infoshop/board/sql/article-sql.xml"/>
+        <mapper resource="kr/pe/infoshop/user/sql/user-sql.xml"/>  
+    </mappers>  
+  
+</configuration> 

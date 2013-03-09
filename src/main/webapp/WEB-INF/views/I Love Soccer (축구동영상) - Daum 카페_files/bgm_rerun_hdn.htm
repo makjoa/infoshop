@@ -1,0 +1,220 @@
+
+<!-- saved from url=(0053)http://cafe.daum.net/_cache/121217/bgm_rerun_hdn.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" charset="utf-8" src="activeXman2015.js"></script><style type="text/css"></style><script type="text/javascript" id="imideo-extension-info">var imideo_extension=true;</script></head><body marginwidth="0" marginheight="0"><div id="daumXmanObject" width="0" height="0" style="position:absolute;"></div>
+
+<script type="text/javascript" language="javascript" src="activeX(1).js"></script>
+
+<script type="text/javascript" language="javascript">
+    document.domain="daum.net";
+    //activX manager setting
+    var obj = new Object();
+    obj.classid = 'clsid:6A2E758A-028B-46BB-A11D-0608AB5A4ED3';
+    obj.id = 'CafeBGMCtrl';
+    obj.name = 'CafeBGMCtrl';
+    obj.width = '0px';
+    obj.height = '0px';
+	obj.codebase = 'http://cafeimg.hanmail.net/cafebgm/3/DaumBgmPlayer.cab#version=0,0,3,1';
+	obj.xmandesc = "는 다음에서 배경음악을 듣기 위해 꼭 필요한 프로그램입니다.";
+	obj.xmantitle = "Daum 배경음악 플레이어";
+	obj.param = [['OIData', 'flH6jkii_Ul_FZy.ZbfsvrbgB.RW2A4Z5ohPyPgfiuUNaqvG8RYM8g00']];
+	obj.xmanvalidkey = "NJXTWaZ_aYE7Kpsr3cr6EeR13jLijakrs8JGx3UGNGLmglnPPU.sBrSN8SQac6.Gy_5Q68dbQOYtkNthg69wbVG6LanC19iNgSdxllWUl2HvgUM.gBi2BYQ2.UYtWDDE";
+
+    isObject = true;
+    var isTryloadingActiveX = false;
+    var isNowPlaying = false;
+    var nowPlayMusic =0;    
+    // Bgm Status Code
+    var playCode = 1;
+    var pauseCode = 2;
+    var stopCode = 0;
+
+    // Service Status Area
+    var CAFEBGMSTAT = 0;
+    var shuffle_stat = false;
+    var curTitle = "";
+    var curArtist = "";
+
+    var retryCnt = 0;
+    var hasBGMModule = true;
+    var isActiveX = true; 
+    var playerVol = 30;
+    
+    var playRetryCnt=1;
+    var isGetPlayList = false;
+
+    var LastPlayState_STOP = 0;
+    var LastPlayState_PLAY = 1;
+    
+    function isPlaying(){
+        return isNowPlaying;
+    }
+    function haveActiveX(){
+        return isActiveX;
+    }
+
+    function loadBGMModule() {
+        isActiveX=false;
+    }
+
+    function init() {
+        try {
+            loadBGMModule();
+            window.setTimeout("startInitPlay();", 500);
+        } catch ( e ){
+            if (retryCnt < 3) {
+                retryCnt++;
+                window.setTimeout("init();", 100);
+            }else{
+            }
+        }
+    }
+            
+    function startInitPlay(){
+        try{
+            isGetPlayList=true;
+            if (top.down.bgmOn == true) {
+                top.down.getPlayList();
+                initVolume(CafeBGMCtrl.LastVolume);
+            }
+        } catch ( e ){
+            if (playRetryCnt < 4) {
+                playRetryCnt++;
+                window.setTimeout("startInitPlay();", 200);
+            }else{
+                isGetPlayList=false;
+            }
+        }
+    }
+    
+    function checkBGMModule() {
+        try {
+            if (CafeBGMCtrl.LastVolume > 0) {
+                CafeBGMCtrl.SetVol(CafeBGMCtrl.LastVolume);
+            } else {
+                CafeBGMCtrl.SetVol(playerVol);
+            }
+            hasBGMModule = true;
+        } catch ( e ){
+            hasBGMModule = false;
+        }
+    }
+    
+    function getVolume(){
+        return CafeBGMCtrl.LastVolume;
+    }
+    
+    function changeVolume(value){
+        playerVol = value;
+        CafeBGMCtrl.SetVol(value);
+    }
+        
+    function initVolume(values){
+        playerVol = values;
+        CafeBGMCtrl.SetVol(values);
+        top.down.initVolume(values)
+    }
+
+    function OMplay(){
+        if(!isGetPlayList){
+            startInitPlay();
+        }else{
+            if( LastPlayState_PLAY == CafeBGMCtrl.LastPlayState ) {
+                CafeBGMCtrl.Play('');
+            } else {
+                top.down.onMPStop();
+            }
+        }
+    }
+    
+    function setNowPlayMusic(musicIdx){
+        try{
+            top.down.setNowPlayMusicForTop(nowPlayMusic);
+        } catch ( e ){}
+    }
+    
+    function getNowPlayMusic(){
+        return nowPlayMusic;
+    }
+    
+    function getNowPlayTitle(){
+        if(CafeBGMCtrl.PlayState!=1){
+            top.down.changeTitle(curTitle,curArtist);
+        }
+    }
+    function loadActiveX(){
+        if(!isTryloadingActiveX){
+            daumActiveXman(obj,'cafeBgmPlayerObj');
+        }
+        isTryloadingActiveX =true
+    }
+</script>
+
+<script text="text/javascript" for="CafeBGMCtrl" event="TitleChanged(lNewState,lTitle,lArtist,lCode)">
+    try {
+        isNowPlaying=true;
+        curTitle = lTitle;
+        curArtist = lArtist;
+        nowPlayMusic = CafeBGMCtrl.NowTrackNo;
+        setNowPlayMusic(CafeBGMCtrl.NowTrackNo);
+        top.down.changeTitle(lTitle,lArtist);
+    } catch ( e ){}
+</script>
+
+<script language="javascript" for="CafeBGMCtrl" event="OpenStateChange(lValue)">
+    var sMsg;
+    switch (lValue) {
+        case  0: sMsg = "알수 없는 에러"; break;
+        case  8: sMsg = "미디어를 변경 중"; break;
+        case  9: sMsg = "미디어 위치 확인 중"; break;
+        case 10: sMsg = "미디어 연결 중"; break;
+        case 11: sMsg = "미디어 로딩 중"; break;
+        case 12: sMsg = "미디어 여는 중"; break;
+        case 13: sMsg = "미디어 열기 완료"; break;
+        case 20: sMsg = "미디어 대기 중"; break;
+        case 21: sMsg = "알수 없는 미디어 주소"; break;
+    }
+    try {
+        top.down.changeTitle("...",sMsg);
+    } catch ( e ){}
+
+</script>
+<script language="javascript" for="CafeBGMCtrl" event="PlayStateChange(lValue)">
+    try {
+        switch (lValue) {
+            case  1: 
+                        isNowPlaying=false;
+                        top.down.changeTitle("플레이 대기중(정지)" , "play버튼을 눌러주세요");
+                        break;
+            case  2: 
+                        isNowPlaying=false;
+                        top.down.changeTitle("플레이 대기중(일시정지)" , "play버튼을 눌러주세요");
+                        break;
+            case  3:                
+                        isNowPlaying=true;
+                        top.down.changeTitle(curTitle,curArtist);
+                        break;
+            case  6: 
+                        isNowPlaying=false;
+                        top.down.changeTitle("버퍼링","잠시만기다려주세요");                 
+                        break;
+            case  9: 
+                        isNowPlaying=false;
+                        top.down.changeTitle("미디어 교체 중","잠시만기다려주세요");                
+                        break;                      
+            case  11: 
+                        isNowPlaying=false;
+                        top.down.changeTitle("다시 연결 중","잠시만기다려주세요");                 
+                        break;                      
+        }
+    } catch ( e ){}
+</script>
+
+
+    
+<div id="cafeBgmPlayerObj">
+</div>
+
+
+
+</body></html>

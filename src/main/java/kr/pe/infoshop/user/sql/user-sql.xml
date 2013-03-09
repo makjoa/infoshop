@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+
+
+
+
+      <!-- 회원 등록 -->
+    <insert id="addUser" parameterType="User">
+        INSERT INTO IS_USER (
+              id, password, name, nickname
+            , joindate, mobile, telephone, homepage
+            , email, birth_year, birth_month, birth_day
+            , address1, address2, contact , profile
+            , mailing, point, seq)
+        values (
+              #{id}, old_password(#{password}), #{name}, #{nickname}
+              , NOW(), NULL, NULL, #{homepage}
+              , #{email}, NULL, NULL, NULL
+              , NULL, NULL, NULL, 'Y'
+              , 'N', '0', '0') 
+    </insert>
+
+
+    <!-- 로그인 체크   -->
+    <select id="loginProcess" parameterType="User" resultType="User">        
+    
+        <![CDATA[
+          SELECT ID, PASSWORD
+          FROM IS_USER
+          WHERE id = #{id} and password = old_password(#{password}) ]]>         
+    
+    </select>  
+
+    <!-- 전체 레코드 조회   -->
+    <select id="getTotalNum" parameterType="HashMap" resultType="int">
+        SELECT COUNT(*) FROM IS_BOARD         
+        <where> 
+            <if test="type != null and keyword != null">
+                ${type} LIKE ${keyword}
+            </if>
+        </where>
+        
+    </select>
+    
+    <!-- 게시물 조회   -->
+    <select id="getArticle" parameterType="int" resultType="Article">        
+        SELECT 
+            * 
+        FROM IS_BOARD                      
+        WHERE DATANUM = #{datanum}        
+    </select>      
+    
+ 
+</mapper>

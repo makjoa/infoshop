@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+    
+<sqlMap namespace="User">
+  <typeAlias alias="UserModel" type="kr.pe.infoshop.user.model.User" />
+    
+    
+    <!-- 회원가입 여부 확인 -->
+  
+  
+    <!-- 회원가입 -->
+    <insert id="addUser" parameterClass="UserModel">
+        
+  <![CDATA[ insert into isuser (id, password, name, nickname, joindate, mobile, telephone, homepage, email, 
+                            birth_year, birth_month, birth_day, address1, address2, contact , profile, mailing, point, seq) 
+                values (#id#, old_password(#password#), #name#, #nickname#, CURDATE(), NULL, NULL, #homepage#, #email#, 
+                            NULL, NULL, NULL, NULL, NULL, NULL, 'Y', 'N', '0', '0') ]]>    
+  
+    </insert>   
+  
+
+    <!-- 회원수정 -->
+
+    <!-- 로그인 정보 확인 -->
+    <select id="loginProcess" parameterClass="UserModel" resultClass="UserModel">
+        <![CDATA[ select * from isuser where id = #id# and password = old_password(#password#) ]]>    
+    </select>
+
+  
+    <!-- 닉네임 중복 확인 -->
+    <select id="emailCheck" parameterClass="String" resultClass="UserModel">
+        <![CDATA[ select * from isuser where email = #email# ]]>    
+    </select>
+  
+      <!-- 닉네임 중복 확인 -->
+    <select id="findByUserId" parameterClass="String" resultClass="String">
+        <![CDATA[ select count(id) cnt from isuser where lower(id) = #id# ]]>    
+    </select>
+    
+</sqlMap>

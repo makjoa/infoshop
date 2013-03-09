@@ -1,0 +1,103 @@
+/* DAUM UI */
+#tierTopWrap{width:100%;position:absolute;top:0;left:0;z-index:102}
+
+#tierTopAlpha{display:none;width:100%;position:absolute;top:0;left:0;background-color:#000;filter:alpha(opacity=60);Opacity:0.6}
+
+#tierTopAlpha.white{background-color:#fff}
+#tierTopExpand{position:relative}
+#tierContWrap{position:relative;top:0;left:0;z-index:99}
+
+
+
+
+
+
+
+
+
+#wrap .daumhide{display:block;position:absolute;top:-9999px;left:-9999px;width:1px;height:1px;line-height:0;overflow:hidden;font-size:0;text-indent:-9999px}
+
+#wrap{position:relative;width:940px;margin:0 auto;text-align:left}
+#header{position:relative;z-index:100;height:146px}
+#content{position:relative;padding-top:110px}
+#left{position:relative;width:655px;padding-top:37px}
+#right{position:absolute;top:265px;right:0;width:280px}
+#footer{position:relative;width:940px;height:67px}
+
+#search{position:absolute;top:34px;left:270px}
+
+
+
+#logo{width:270px;height:112px;padding-top:34px}
+#logo h1{float:right}
+#logo .util{position:absolute;top:0;left:0}
+#logo .util .ir{float:left;height:32px;background:url(http://i1.daumcdn.net/deco/top/2012/mnu_v09.png) no-repeat}
+#logo .util .ir .ir_desc{padding-top:10px}
+#logo .util .util_li{float:left}
+#logo .ie .home{width:77px;background-position:0 0}
+#logo .ie .daumapp{width:77px;margin-left:11px;background-position:0 -1600px}
+#logo .etc .daumapp{width:77px;background-position:0 -1600px}
+
+#service{position:absolute;top:0;right:-4px;height:32px;overflow:hidden}
+#service .ir{float:left;height:34px;background:url(http://i1.daumcdn.net/deco/top/2012/mnu_v09.png) no-repeat}
+#service .ir .ir_desc{padding-top:10px;text-align:center}
+
+
+
+
+
+
+#main{float:left}
+#main .main_li{float:left}
+#main .spr{padding-left:12px;background:url(http://i1.daumcdn.net/deco/top/2012/mnu_v09.png) no-repeat 0 -360px}
+#main .cafe{width:30px;background-position:0 -60px}
+#main .mail{width:30px;background-position:0 -110px}
+#main .blog{width:40px;background-position:0 -160px}
+#main .shop{width:32px;background-position:0 -210px}
+#main .local{width:30px;background-position:0 -260px}
+#main .news{width:30px;background-position:0 -410px}
+#main .stock{width:30px;background-position:0 -460px}
+#main .realestate{width:42px;background-position:0 -510px}
+#main .dic{width:30px;background-position:0 -560px}
+#main .agora{width:40px;background-position:0 -610px}
+#main .miznet{width:42px;background-position:0 -660px}
+#main .passion{width:50px;background-position:0 -710px}
+#main .daumtv{width:67px;background-position:0 -1690px}
+
+
+
+#sub{float:left}
+#sub .sub_li{float:left}
+#sub .first{padding-left:10px;background:url(http://i1.daumcdn.net/deco/top/2012/mnu_v09.png) no-repeat 0 -760px}
+#sub .game{width:48px;background-position:0 -810px}
+#sub .hope{width:54px;background-position:0 -860px}
+#sub .kids{width:58px;background-position:0 -910px}
+
+
+
+
+.sect_bar .ir_desc{padding-top:14px;text-align:center}
+#newsGrp .ir_desc{display:block;height:12px;font-size:12px;text-align:center}
+#newsTitle .ir_desc{padding-top:2px}
+#economyTitle .ir_desc{padding-top:2px}
+#sportsTitle .ir_desc{padding-top:2px}
+#entertainTitle .ir_desc{padding-top:2px}
+
+.ir .ir_desc{display:block;position:relative;z-index:-1;height:11px;overflow:hidden;font-size:11px}
+
+
+
+
+#bestKeyword{position:absolute;top:76px;left:0;width:420px;overflow:hidden;text-align:center}
+#bestKeyword .best_li{display:inline;padding:0 5px 0 9px;background:url(http://i1.daumcdn.net/deco/top/2012/ico_v05.png) no-repeat 0 -400px}
+#bestKeyword .first{padding-left:1px;background:none}
+
+
+
+#wrapMinidaum{position:relative;width:884px;margin:0 auto;}
+
+
+#minidaum { float:right; margin:0; height: 26px; font-family: 돋움, dotum, tahoma, sans-serif;; font-size: 11px; letter-spacing: -1px;}
+
+#cHeader { width:884px; margin:0 auto; padding-top: 5px; position:relative; z-index:1; }
+.cafeHeader .serviceLogo { width:58px; background-image:url(http://i1.daumcdn.net/cafeimg/top7/gnb/img_cafe.gif); }

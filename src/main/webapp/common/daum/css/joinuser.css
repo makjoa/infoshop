@@ -1,0 +1,254 @@
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:12px;line-height:1.5;font-family:'����',dotum,Helvetica,sans-serif;color:#333} /* color���� �����ΰ��̵忡 �°Ի�� */
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:underline}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+/* global */
+#daumIndex {overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0}
+.ir_pm {display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px}
+.ir_wa {display:block;overflow:hidden;position:relative;width:100%;height:100%;z-index:-1}
+.screen_out {display:block;overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:0;line-height:0;text-indent:-9999px}
+.screen_hide {font-size:0;line-height:0;visibility:hidden}
+ 
+.f_l {float:left}
+.f_r {float:right}
+.show {display:block}
+.hide {display:none}
+.tbl {border-collapse:collapse;border-spacing: 0}
+
+#daumWrap {position:relative;width:978px;margin:0 auto}
+#daumHead {width:162px;position:absolute;top:99px;left:40px}
+#daumLogo {float:left;width:62px;height:26px;margin:2px 9px 0 0;line-height:1}
+#daumServiceLogo {float:left;overflow:hidden;width:91px;height:24px;background:url(https://user.daum.net/sslicon/userinfo2012/servicelogo_121009.gif) no-repeat;text-indent:-9999px}
+#daumContent {overflow:hidden;padding-top:30px}
+#cMain {overflow:hidden;width:978px;height:810px;background:url() no-repeat 0 0}
+#mNav {width:576px;padding:108px 0 0 361px}
+#mArticle {width:576px;padding-left:361px}
+#mArticle .wrap_info {overflow:hidden;width:528px;padding:109px 0 0 47px}
+#cEtc {width:978px;height:17px;background:url(https://user.daum.net/sslicon/userinfo2012/bg_join_bottom.jpg) no-repeat 0 0;font-size:0;line-height:0}
+#daumFoot {width:100%;height:71px;margin-top:63px;padding-top:18px;border-top:1px solid #e2e2e2;text-align:center;clear:both;color:#e2e2e2}
+#daumFoot .link_info {font-weight:bold;color:#666}
+#daumFoot .link_daum {color:#666}
+#daumFoot .copyright {padding-top:2px;font-size:11px;color:#666}
+
+/* �Ǹ޴� */
+.list_tab {overflow:hidden;width:536px;height:48px;padding:24px 0 0 40px}
+.list_tab li {float:left;width:242px;height:48px;margin-right:11px}
+.list_tab .tab_join {display:block;width:242px;height:48px;background:url(https://user.daum.net/sslicon/userinfo2012/tab_join_121119.jpg) no-repeat;text-indent:-9999px}
+.list_tab .link_email {background-position:0 -180px}
+.list_tab .link_phone {background-position:-260px -180px}
+.list_tab .on .link_email {background-position:0 -120px}
+.list_tab .on .link_phone {background-position:-260px -120px}
+
+.wrap_btn {overflow:hidden;width:100%;text-align:center}
+.wrap_btn .inner_btn {display:inline-block}
+.btn_join {display:block;overflow:hidden;border:0 none;background:url(https://user.daum.net/sslicon/userinfo2012/btn_join_121119.gif) no-repeat;text-indent:-9999px;cursor:pointer}
+.btn_next {width:119px;height:41px;margin:0 auto;background-position:0 -475px}
+.btn_done {float:left;width:119px;height:41px;margin:0 2px;background-position:0 -525px}
+.btn_daum {width:94px;height:36px;margin:25px auto;background-position:0 -200px}
+.btn_regist {float:left;width:105px;height:37px;background-position:0 -950px}
+.btn_ok {float:left;width:60px;height:36px;margin:5px 0;background-position:0 -1000px}
+.btn_overlap {float:left;width:77px;height:37px;margin-top:14px;background-position:0 -675px}
+.btn_cancel {float:left;width:76px;height:41px;margin:0 2px;background-position:0 -625px}
+.btn_cleaner {width:217px;height:56px;margin:35px auto 0;background-position:0 -875px}
+
+.tit_join {display:block;overflow:hidden;background:url(https://user.daum.net/sslicon/userinfo2012/tit_join_121119.gif) no-repeat;text-indent:-9999px}
+.tit_agree1 {float:left;width:359px;height:17px;background-position:48px -275px}
+.tit_agree2 {float:left;width:369px;height:19px;background-position:0 -75px}
+.tit_person {float:left;width:189px;height:17px;margin-left:1px;background-position:0 -425px}
+.tit_phone {float:left;width:157px;height:13px;margin-top:11px;background-position:20px -325px}
+.tit_code {float:left;width:157px;height:15px;margin-top:11px;background-position:20px -449px}
+.tit_done {float:left;width:233px;height:18px;margin-left:1px;background-position:0 -400px}
+.tit_external {float:left;width:293px;height:17px;margin-left:1px;background-position:0 -475px}
+.tit_nexon {float:left;width:396px;height:17px;margin-left:1px;background-position:0 -500px}
+
+.ico_join {display:block;overflow:hidden;background:url(https://user.daum.net/sslicon/userinfo2012/ico_join_121119.gif) no-repeat;text-indent:-9999px}
+
+/* �ܰ�ǥ�� */
+.img_level {display:inline;overflow:hidden;float:right;width:42px;height:10px;margin:4px 48px 0 0;background:url(https://user.daum.net/sslicon/userinfo2012/img_level.gif) no-repeat;text-indent:-9999px}
+.img_level1 {background-position:0 0}
+.img_level2 {background-position:0 -20px}
+.img_level3 {background-position:0 -40px}
+
+.tf_bg {overflow:hidden;height:34px;padding:0 10px;border:1px solid #7893eb;font-weight:bold;font-size:14px;color:#7893eb;line-height:38px}
+.tf_txt {float:left;width:204px;height:24px;border:1px solid #cbcbcb;padding:6px 10px 4px;font-weight:bold;font-size:14px;color:#6683e7}
+.tf_phone {float:left;width:167px;margin:0 4px 0 0}
+.tf_regist {float:left;width:324px;margin:6px 4px 0 0;background-position:12px 12px}
+.tf_done {border-color:#cbcbcb;color:#000}
+
+/* �˸����� */
+.txt_warn {display:block;font-weight:normal;font-size:12px;line-height:18px;clear:both}
+.txt_good {float:left;width:256px;color:#6683e7}
+.txt_bad {float:left;width:240px;color:#f36d63}
+.txt_best {float:left;width:256px;color:#45af0f}
+
+/* �� �ڽ� */
+.box_join {width:479px;margin:28px 0 0 48px;padding:4px 0;background:url(https://user.daum.net/sslicon/userinfo2012/box_top.gif) no-repeat}
+.box_body {overflow:hidden;width:477px;border-right:1px solid #dce6f8;border-left:1px solid #dce6f8;background-color:#eef2f9}
+.box_bottom {width:479px;height:4px;background:url(https://user.daum.net/sslicon/userinfo2012/box_bottom.gif) repeat-y;font-size:0;line-height:0}
+.box_external {margin-top:24px}
+
+/* ���� ���̾� */
+.join_layer {position:absolute}
+.join_layer .inner_join_layer {z-index:10;width:152px;padding:10px 8px 7px 11px;border:1px solid #838998;font-weight:normal;font-size:12px;background-color:#fff;color:#777;line-height:18px}
+.join_layer .layer_foot .img_arr {position:absolute;z-index:20;top:12px;left:-6px;width:8px;height:11px;background:url(https://user.daum.net/sslicon/userinfo2012/img_arr.gif) no-repeat}
+.join_layer2 {position:absolute;width:294px;height:173px;padding:19px 0 0 34px;background:url(https://user.daum.net/sslicon/userinfo2012/img_tooltip.png) no-repeat}
+.box_id .layer_foot .img_arr {position:absolute;z-index:20;top:-5px;left:4px;width:11px;height:8px;background:url(https://user.daum.net/sslicon/userinfo2012/img_arr_up.gif) no-repeat}
+
+.txt_notice {display:block;width:400px;margin-top:12px;line-height:19px;color:#888}
+.wrap_warn {overflow:hidden;margin-top:11px}
+.wrap_warn .ico_warn {float:left;width:16px;height:16px;margin-right:4px;background-position:0 0}
+/*.wrap_warn .txt_notice {float:left;width:400px;margin-top:1px;line-height:19px;color:#888}*/
+.wrap_warn .notice_phone {margin-bottom:3px}
+
+/* ����� */
+.join_email {width:456px;padding:0 0 14px 21px}
+.join_email .lab_email {float:left;width:76px;height:13px;margin-top:25px;background-position:0 -300px}
+.join_email .tf_email {float:left;width:256px;height:34px;margin:14px 4px 0 0;text-transform:lowercase}
+.join_email .txt_warn {margin-bottom:-1px;padding:7px 24px 0 74px}
+.list_notice {width:520px;margin:8px 8px 0;padding:0 0 23px 40px;border-bottom:1px solid #e6e9ef}/* 121128 ���� */
+.list_notice li {position:relative;z-index:5;width:450px;margin-top:2px;padding-left:6px;line-height:18px;background:url(https://user.daum.net/sslicon/userinfo2012/ico_dot.gif) no-repeat 0 6px;color:#888}
+.list_notice .desc_emailid {z-index:10}
+.list_notice .ico_question {display:inline-block;width:16px;height:16px;margin:0 3px 0 1px;background-position:100% -20px;vertical-align:top;cursor:pointer}
+.list_notice .join_layer2 {top:-30px;left:207px}
+.list_notice .join_layer2 .tit_help {font-weight:bold;color:#333}
+.list_notice .join_layer2 .list_help {padding-left:1px}
+.list_notice .join_layer2 .list_help li {width:272px;margin-top:8px;line-height:16px;color:#666}
+.list_notice .join_layer2 .emph_txt {color:#f36d63}
+.list_notice .join_layer2 .btn_close {position:absolute;top:11px;right:12px;z-index:15;width:17px;height:17px;background-position:100% -60px}
+.list_notice .emph_txt {font-weight:bold}
+.list_notice .reg2 {font-weight:bold;color:#888;}
+.list_notice .reg2:active, .list_notice .reg2:hover {color:#6887fa}
+
+.get_regist {padding:14px 0}
+.get_num {margin-top:27px}
+.get_regist .btn_ok {float:left;margin:0}
+
+.wrap_auth {overflow:hidden;padding-top:4px;clear:both}
+.wrap_auth .txt_warn {width:300px;margin:7px 0 -1px;padding-left:155px}
+.get_regist .txt_warn {width:300px;margin:7px 0 -1px;padding-left:155px}
+
+.wrap_agree {overflow:hidden;position:relative;width:479px;margin:29px 0 0 48px;padding:19px 0 20px}
+.wrap_agree .agree_rule {overflow-x:hidden;overflow-y:scroll;width:439px;height:57px;margin:5px 0 19px;padding:17px 19px;border:1px solid #e1e1e3;line-height:19px;color:#777;clear:both} 
+.wrap_agree .txt_personal {height:74px;margin:0;padding-top:0 !important}
+.wrap_agree .tit_rule {display:block;margin-bottom:3px;font-weight:normal;color:#222}
+.wrap_agree .agree_inp1 {position:absolute;top:0;left:0}
+.wrap_agree .agree_inp2 {position:absolute;top:136px;left:0}
+.wrap_agree .inp_check {float:left;margin:1px 5px 0 0;*margin:-3px 5px 0 0}
+.wrap_agree .lab_agree {float:left;font-weight:bold}
+.wrap_agree .tab_rule {float:right;margin-bottom:6px}
+.wrap_agree .tab_rule .link_rule {color:#777}
+.wrap_agree .tab_rule .txt_on {color:#222}
+.wrap_agree .tab_rule .txt_bar {color:#e2e2e2}
+/*.wrap_agree .wrap_rule {padding-top:10px}*/
+.wrap_agree .agreement_new h6 {font-size:12px; margin-bottom:0;font-weight:normal}
+.wrap_agree .agreement_new .tit {display:block;margin:10px 0}
+.wrap_agree .agreement_new .agreement {line-height:18px}
+.wrap_agree .agreement_new .agreement .doc_list li{margin-top:0}
+.wrap_agree .agreement_new .agreeText {margin:21px 0 0 0;text-align:center}
+.wrap_agree .agreement_noti h6 {display:block;height:19px;font-size:12px;font-weight:normal;margin-bottom:3px;padding-top:17px;color:#222}
+.wrap_agree .doc_comment {line-height:18px}
+.wrap_agree .withtopmargin {margin-top:10px}
+.wrap_agree .withbottommargin {margin-bottom:10px}
+.wrap_agree .doc_list, .doc_sub_list{padding-left:20px;line-height:18px}
+.wrap_agree .doc_list li {margin-top:10px;list-style-type:decimal}
+.wrap_agree .doc_list_nostyle{padding-left:0}
+.wrap_agree .doc_list_nostyle li{margin-top:10px; list-style-type:none}
+.wrap_agree .doc_sub_list li {margin-top:0; list-style-type:disc}
+
+/* ���̵��Է� */
+.box_id {position:relative;z-index:20;width:479px;margin:24px 0 0 48px;padding-top:4px;background:url(https://user.daum.net/sslicon/userinfo2012/box_top.gif) no-repeat}
+.box_id .list_info {overflow:hidden;width:477px;border-right:1px solid #dce6f8;border-left:1px solid #dce6f8;background-color:#eef2f9;clear:both}
+.box_id .list_emailid {border-bottom:1px solid #d4def0}
+.box_id .info_tit {float:left;width:108px;height:13px;padding:22px 21px 23px 19px}
+.box_id .list_emailid .info_tit {padding:20px 21px 25px 19px}
+.box_id .tit_id {width:73px;height:13px;background-position:0 -375px}
+.box_id .tit_email {width:75px;height:13px;background-position:1px -350px}
+.box_id .info_cont {float:left;width:327px;padding-left:2px;font-weight:bold;font-size:14px;line-height:58px;color:#222}
+.box_id .cont_change {width:329px;min-height:61px;padding-left:0;line-height:0}
+.box_id .txt_id {float:left}
+.box_id .txt_warnning {display:inline;margin:5px 0 0 -1px;padding-bottom:12px;line-height:20px;font-size:12px;font-weight:normal}
+.box_id .tf_txt {width:207px;height:24px;margin-top:13px;background-color:#fff}/*border-color:#6683e7*/
+.box_id .btn_join {display:inline;float:right;width:77px;height:37px;margin:13px 19px 0 0}
+.box_id .btn_change {background-position:0 -725px}
+.box_id .btn_check {background-position:0 -675px}
+.emailtype .box_id .join_layer {top:120px;right:-54px;z-index:50}
+.phonetype .box_id .join_layer {top:61px;right:-54px;z-index:50}
+.box_phone {z-index:45}
+.box_phone .info_tit {padding-bottom:20px}
+.box_phone .info_cont {line-height:54px}
+.box_phone .btn_change {margin-top:9px}
+
+.desc_help {position:relative;width:450px;margin:12px 0 0 49px;line-height:18px;color:#888}
+.desc_help .ico_notice {float:left;width:15px;height:16px;margin-right:6px;background-position:0 -40px;vertical-align:top}
+.desc_help .ico_question {display:inline-block;width:16px;height:16px;margin:0 3px 0 1px;background-position:100% -20px;vertical-align:top;cursor:pointer}
+.desc_help .join_layer2 {top:-30px;left:207px}
+.desc_help .join_layer2 .tit_help {font-weight:bold;color:#333}
+.desc_help .join_layer2 .list_help {padding-left:1px}
+.desc_help .join_layer2 .list_help li {width:272px;margin-top:8px;padding-left:6px;line-height:16px;background:url(https://user.daum.net/sslicon/userinfo2012/ico_dot.gif) no-repeat 0 6px;color:#666}
+.desc_help .join_layer2 .emph_txt {color:#f36d63}
+.desc_help .join_layer2 .btn_close {position:absolute;top:11px;right:12px;z-index:15;width:17px;height:17px;background-position:100% -60px}
+.desc_help .txt_emailid {font-weight:bold}
+.recomid .desc_help .join_layer2 {top:-30px;left:170px}
+
+/* �������� */
+.list_user {display:inline;float:left;width:479px;margin:28px 0 28px 48px;padding-bottom:23px;border-bottom:1px solid #e1e6eb}
+.list_user li {position:relative;width:461px;float:left;margin-top:7px;padding-left:19px;font-weight:bold;font-size:14px;color:#000}
+.list_user .tit_join {display:inline;float:left;width:128px;margin:9px 0 0 2px}
+.list_user .lab_pw {height:13px;background-position:0 -150px}
+.list_user .lab_check {height:13px;background-position:0 -175px}
+.list_user .lab_name {height:13px;background-position:0 -200px}
+.list_user .tit_gender {height:14px;background-position:-1px -225px}
+.list_user .tf_txt {width:214px}
+.list_user .inp_radio {float:left;margin:10px 3px 0 1px}
+.list_user .lab_gender {float:left;margin:8px 16px 0 0}
+.list_user .txt_warnning {display:inline;margin:9px 0 4px 128px;line-height:16px;font-size:12px;font-weight:normal}
+.list_user .join_layer {top:0;right:-87px}
+.user_phone {margin-top:23px}
+
+/* ���ԿϷ� Ȯ�� */
+.wrap_notice {overflow:hidden;width:479px;margin-top:69px;padding-top:84px;background:url(https://user.daum.net/sslicon/userinfo2012/bg_tree_121010.gif) no-repeat 50% 0;text-align:center}
+.wrap_notice .tit_done {width:196px;height:17px;margin:0 auto;background-position:0 -25px}
+.wrap_notice .desc_check {margin-top:13px;font-size:14px;color:#444;line-height:22px}
+.wrap_notice .emph_mail {font-weight:bold;color:#222}
+.wrap_notice .done_btn {overflow:hidden;width:234px;margin:24px auto}
+#mArticle .wrap_notice .btn_two {overflow:hidden;width:213px;margin:24px auto}
+#mArticle .wrap_notice .btn_one {width:94px}
+#mArticle .wrap_notice .btn_one2 {width:73px}
+.wrap_notice .done_btn .btn_retry {float:left;width:136px;height:36px;margin-right:4px;background-position:0 -250px}
+.wrap_notice .done_btn .btn_daum {float:left;width:94px;height:36px;margin:0;background-position:0 -200px}
+.wrap_notice .done_btn .btn_ok {float:left;width:73px;height:36px;margin:0;background-position:0 -574px}
+
+#mArticle .link_corp {position:absolute;top:806px;left:36px;z-index:10;width:250px;height:49px;background-position:0 -425px}
+
+.type_email .wrap_warn {height:20px}
+.type_phone .wrap_warn {height:20px}
+.list_user .wrap_warn {width:100%;margin:0px}
+.list_info .wrap_warn {width:100%;margin:0px}
+.recomid .regit_id {display:none}
+.regitid .recom_id {display:none}
+.regit_id .txt_warn {padding:7px 0 12px}
+.recomid .box_id .join_layer {display:none}
+
+.box_done {margin-top:22px;font-size:14px;line-height:22px;background:url(https://user.daum.net/sslicon/userinfo2012/box_done_top.gif) no-repeat;text-align:center;color:#444}
+.box_done .box_body {height:452px;border-color:#f1f5fc;background-color:#f8fafd}
+.box_done .desc_done {padding-top:169px;background:url(https://user.daum.net/sslicon/userinfo2012/bg_tree_121119.gif) no-repeat 210px 92px}
+.box_done .emph_id {font-weight:bold;color:#6988fb}
+.box_done .wrap_btn {margin:19px 0 41px}
+.box_done .btn_home {float:left;width:91px;height:41px;margin:0 2px;background-position:0 -775px}
+.box_done .btn_re {float:left;width:168px;height:41px;margin:0 2px;background-position:0 -825px}
+.box_done .lab_txt {padding-left:6px;font-size:12px;color:#777}
+.box_done .box_bottom {background:url(https://user.daum.net/sslicon/userinfo2012/box_done_bottom.gif) no-repeat}
+
+.on_tip {z-index:45}
+.tf_on {border-color:#7893eb}
+#wrapWarn {overflow:hidden;width:100%;line-height:0}

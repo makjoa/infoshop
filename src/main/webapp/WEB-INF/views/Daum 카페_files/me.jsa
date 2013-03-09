@@ -1,0 +1,15 @@
+minidaum.pushAlert({ 
+	logInStatus: 'logon',
+	nick: {
+		nick: '%54%68%65%20%4D%61%6E%61%67%65%72', 
+		shortNick: '%54%68%65%20%4D%61%6E%61%2E%2E'
+	}, 
+	mail: {
+		url: 'http://mail.daum.net/?nil_profile=mini&nil_src=mail_alarm', 
+		count: '99'
+	}, 
+	cafe: {
+		url: 'http://cafe.daum.net/_c21_/myalimi_main?nil_profile=mini&nil_src=cafe_alarm', 
+		count: '99'
+	}
+});

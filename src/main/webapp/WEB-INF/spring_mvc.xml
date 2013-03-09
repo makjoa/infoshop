@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:task="http://www.springframework.org/schema/task"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:mvc="http://www.springframework.org/schema/mvc" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd
+http://www.springframework.org/schema/task 
+http://www.springframework.org/schema/task/spring-task.xsd
+http://www.springframework.org/schema/mvc
+http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+<context:component-scan base-package="com.incross"/>
+<task:annotation-driven/>	
+<mvc:annotation-driven/>
+<mvc:default-servlet-handler/>
+ <!-- restful 방식 위해 이후 접근된 모든 접근 request 가 적용될 수 있도록 해야 확장자가 없는 url을 적용하여 적용 시킬 수 있다. /***/*** -->
+
+	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+	  <property name="mediaTypes">
+		<map>
+		   <entry key="xml" value="application/xml" />
+		   <entry key="html" value="text/html" />
+		</map>
+	  </property>
+ 
+	  <property name="viewResolvers">
+		<list>
+		  <!-- JAXB XML View (Controller 에서 view 이름을  bean 이름으로 지정하면 결과가 넘어와서 View 화면에 XML 로 뿌려짐) -->
+			<bean class="org.springframework.web.servlet.view.BeanNameViewResolver"/>
+	  		<bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+				<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+				<property name="prefix" value="/WEB-INF/jsp/"/>
+				<property name="suffix" value=".jsp"/>
+			</bean>
+			
+		 </list>
+	  </property>
+	  <!-- property name="ignoreAcceptHeader" value="true" / -->
+ 
+	</bean>
+<!-- 내부에서 POST 메소드의 body로 넘어오는 XML 값을 자동 파싱 하기 위함 -->
+<bean id="jaxbMarshaller"
+class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+<property name="classesToBeBound">
+	<list>
+	    <value>com.incross.dto.UserDTO</value>
+	</list>
+</property>
+</bean>
+
+<!-- view 로 넘어올 dto 들을 파싱 하여 view 페이지로 넘겨주기 위함 -->
+<bean id="userDTO" class="org.springframework.web.servlet.view.xml.MarshallingView">
+		<constructor-arg ref="jaxbMarshaller" />
+</bean>
+
+
+
+</beans>

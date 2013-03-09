@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+    
+<sqlMap namespace="article">
+  <typeAlias alias="ArticleModel" type="kr.pe.infoshop.board.model.Article" />
+  
+  
+  
+    <select id="getTotalNum" parameterClass="String" resultClass="int">
+        <![CDATA[ SELECT COUNT(*) from IS_BOARD  ]]>    
+    </select>  
+  
+    <select id="getSearchTotalNum" parameterClass="java.util.HashMap" resultClass="int">
+        <![CDATA[ SELECT COUNT(idx) from IS_BOARD 
+                       WHERE $type$ LIKE '%$keyword$%'
+    </select>
+  
+  
+  <select id="list" parameterClass="String" resultClass="java.util.HashMap">
+    <![CDATA[ select * from isboard where bbsid = #bbsid#  ]]>    
+  </select>
+  
+  
+    <select id="viewTable" parameterClass="String" resultClass="ArticleModel">
+    <![CDATA[ select bbsid, seq, ifnull(ref, ""), ifnull(step, ""), ifnull(lev, ""),  writer, subject, password, email, ifnull(hit, ""), html, homepage, wtime, ip, ifnull(memo, ""), content, ccl_id from isboard where seq = #seq#  ]]>    
+  </select>
+  
+    <insert id="writeArticle" parameterClass="ArticleModel">
+
+            
+         insert into infoshop.isboard(BBSID,REF,STEP,LEV,WRITER,SUBJECT,PASSWORD,EMAIL,HIT,HTML,HOMEPAGE,STS,WTIME,IP,MEMO,CONTENT,CCL_ID )
+                                            values(#bbsid#, 0, 0, 0, #writer#, #subject#, #password#, #email#, 0, #html#, #homepage#, 1, CURDATE(), #ip#, 0, #content#, '0' );
+
+
+    </insert>
+    
+    <select id="getArticleList" parameterClass="java.util.HashMap" resultClass="java.util.HashMap">
+        <![CDATA[
+        SELECT * FROM IS_BOARD
+        LIMIT #{startArticleNum}, #{endArticleNum}  
+         ]]>    
+    </select>    
+    
+    <select id="getArticleList" parameterClass="java.util.HashMap" resultClass="java.util.HashMap">
+        <![CDATA[
+        SELECT 
+                    wr_id, wr_num, wr_reply, wr_parent, wr_is_comment, wr_comment, wr_comment_reply,
+                    ca_name, wr_option, wr_subject, wr_content, wr_link1, wr_link2, wr_link1_hit, wr_link2_hit,
+                    wr_trackback, wr_hit, wr_good, wr_nogood, mb_id, wr_password, wr_name, wr_email, wr_homepage,
+                    wr_datetime, wr_last, wr_ip, wr_1, wr_2, wr_3, wr_4, wr_5, wr_6, wr_7, wr_8, wr_9, wr_10
+        FROM is_board limit 0, 10 ;  
+         ]]>    
+    </select>
+</sqlMap>

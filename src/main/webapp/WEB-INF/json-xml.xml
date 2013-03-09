@@ -1,0 +1,40 @@
+    <!-- restful 방식 위해 이후 접근된 모든 접근 request 가 적용될 수 있도록 해야 확장자가 없는 url을 적용하여 적용 시킬 수 있다. /***/*** -->
+	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+		<property name="order" value="1" />
+		<property name="mediaTypes">
+			<map>
+                <!-- request header 에 application/xml 로 보내줘야함 -->
+				<!-- key 가 URL 뒤에 .xml 방식으로 붙여줘야 함 -->
+				<!-- http://localhost:8080/push_web_server/reg/user/1234.xml -->
+				<!-- 실제로 1234.xml 파일은 없음 -->
+				<entry key="json" value="application/json" />
+				<entry key="xml" value="application/xml" />				
+			</map>
+		</property>
+
+		<property name="defaultViews">
+			<list>
+				<!-- JSON View -->
+				<bean
+					class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
+				</bean>
+
+				<!-- RSS View -->
+
+				<!-- JAXB XML View -->
+                <!-- JAXB XML View (rest 방식에서 마지막에 .xml 로 쓰면 결과가 넘어와서 View 화면에 XML 로 뿌려짐) -->
+				<bean class="org.springframework.web.servlet.view.xml.MarshallingView">
+					<constructor-arg>
+						<bean class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+							<property name="classesToBeBound">
+								<list>
+									<value>kr.pe.infoshop.user.User</value>
+								</list>
+							</property>
+						</bean>
+					</constructor-arg>
+				</bean>
+			</list>
+		</property>
+		<property name="ignoreAcceptHeader" value="true" />
+	</bean>

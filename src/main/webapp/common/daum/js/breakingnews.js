@@ -1,0 +1,1 @@
+try{breakingNewsSearchExec.callBack({"site":{"mobile":[],"pc":[]},"idx":"","pc":[{"keyword":"","link":"","type":""}],"mobile":[{"keyword":"","link":"","type":""}]});}catch(e){}

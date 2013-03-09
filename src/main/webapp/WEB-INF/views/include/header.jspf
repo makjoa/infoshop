@@ -1,0 +1,205 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="ko-KR"> 
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ko-KR"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="ko-KR"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ko-KR"> <![endif]-->
+<!--[if gt IE 8]>     <html lang="ko-KR">  <!--<![endif]-->
+  <head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<title>INFOSHOP</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="http://www.bbc.co.uk/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap 
+   <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/bootstrap/css/bootstrap.min.css">
+    -->
+    <!-- Custom UI 
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/is_header.css">
+    -->
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/resources/css/is_bundle.css">
+    <link rel="stylesheet" type="text/css" href="http://s1.daumcdn.net/editor/releases/6.87/css/editor_cafe.css">
+	<script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+		<!-- DAUM UI -->
+		<!--
+		<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/common/daum/css/common.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/common/daum/css/default.css">
+		<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/common/daum/css/20130115090146.7.css">--> 
+		<script type="text/javascript" src="<%=request.getContextPath()%>/common/js/jquery-1.9.0.min.js"></script>
+		<script type="text/javascript" src="<%=request.getContextPath()%>/resources/vojs/vo.min.js"></script>
+		<script type="text/javascript" src="<%=request.getContextPath()%>/resources/bootstrap/js/bootstrap.js"></script>
+		<!-- 
+		<script type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/jigu.min.js"></script>
+		<script type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/common.js"></script>
+		<script type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/suggest.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/util_gzip.js"></script>
+		<script type="text/javascript" id="imideo-extension-info">var imideo_extension=true;</script>
+		<script charset="UTF-8" type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/tiara.min.js"></script>
+		<script id="PersonalScript" type="text/javascript" src="<%=request.getContextPath()%>/common/daum/cafe/allcount_hdn"></script>
+		<script type="text/javascript" charset="utf-8" defer="" id="breakingNewsSearchCallBack" src="<%=request.getContextPath()%>/common/daum/js/breakingnews.js"></script>
+		-->		
+  </head>  
+
+  <body id="page-docs" class="not-front not-logged-in no-sidebars user-style-mouse208" data-twttr-rendered="true" scroll="no">
+    <div id="doc">
+	<div class="push-loader" id="pushStateSpinner"></div>
+      <!-- 헤더
+      ================================================== -->
+	<div class="topbar js-topbar">
+		<div id="banners" class="js-banners">
+		</div>
+		<div class="global-nav" data-section-term="top_nav">
+			<div class="global-nav-inner">
+				<div class="container">
+					<ul class="nav js-global-actions" id="global-actions">
+						<li id="global-nav-home" class="home" data-global-action="home">
+						<a class="js-nav" href="/infoshop" data-component-term="home_nav" data-nav="home" title="Home">
+						<span class="new-wrapper">
+						<i class="bird-topbar-etched"></i>
+						<i class="nav-new"></i>
+						</span>
+						<span class="text">FOOTBALL TALK</span>
+						</a>
+						</li>
+						<li id="global-nav-home" class="home" data-global-action="home">
+						<a class="js-nav" href="#" data-component-term="home_nav" data-nav="home" title="Home">
+						<span class="new-wrapper">
+						<i class="nav-home"></i>
+						<i class="nav-new"></i>
+						</span>
+						<span class="text">홈</span>
+						</a>
+						</li>
+						<li class="people" data-global-action="connect">
+						<a class="js-nav" href="#" data-component-term="connect_nav" data-nav="connect" title="Connect">
+						<span class="new-wrapper"><i class="nav-people"></i><i class="nav-new"></i></span>
+						<span class="text">뉴스</span>
+						<span class="caret"></span>
+						</a>
+						</li>
+						<li class="topics" data-global-action="discover">
+						<a class="js-nav" href="/infoshop/info" data-component-term="discover_nav" data-nav="discover" title="Discover">
+						<span class="new-wrapper"><i class="nav-topics"></i><i class="nav-new"></i></span>
+						<span class="text">정보</span>
+						<span class="caret"></span>
+						</a>
+						</li>
+						<li class="profile" data-global-action="profile">
+						<a class="js-nav" href="#" data-component-term="profile_nav" data-nav="profile" title="Me">
+						<span class="new-wrapper"><i class="nav-me"></i><i class="nav-new"></i></span><span class="text">포럼</span>
+						</a>
+						</li>
+						<li class="profile" data-global-action="profile">
+						<a class="js-nav" href="javascript:$('#facebook-login-form').submit();" data-component-term="profile_nav" data-nav="profile" title="Me">
+						<span class="new-wrapper"><i class="nav-me"></i><i class="nav-new"></i></span><span class="text">인물</span>
+						</a>
+						</li>						
+					</ul>
+					<div class="pull-right">
+						<c:if test="${empty userInfo}">
+						<ul class="nav secondary-nav session-dropdown" id="session">
+							<li class="dropdown js-session">
+							<a class="dropdown-toggle dropdown-signin" id="signin-link" href="#" data-nav="login" data-toggle="dropdown">
+							로그인<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu dropdown-form" id="signin-dropdown">
+								<li class="dropdown-caret right">
+								<span class="caret-outer"></span>
+								<span class="caret-inner"></span>
+								</li>
+								<li>
+								<!-- FACEBOOK login -->
+								<form id="facebook-login-form" action="${request.contextPath}/infoshop/signin" method="POST" class="hidden">
+							    </form>								
+								<!-- TWITTER login -->
+								<form id="twitter-login-form" action="${request.contextPath}/signin/twitter" method="POST" class="hidden">
+								</form>
+								<form:form modelattribute="user" action="/infoshop/login" cssclass="js-signin signin" method="post">
+								<fieldset class="textbox">
+									<label class="username js-username">
+									<span>아이디 또는 이메일</span>
+									<input class="js-username-field email-input" type="text" name="id" autocomplete="on">
+									</label>
+									<label class="password js-password">
+									<span>비밀번호</span>
+									<input class="js-password-field" type="password" value="" name="password">
+									</label>
+								</fieldset>
+								<fieldset class="subchck">
+									<label class="remember">
+									<input type="checkbox" value="1" name="remember_me" checked="checked">
+									<span>ID 저장</span>
+									</label>
+									<button type="submit" class="btn submit">로그인</button>
+								</fieldset>
+								<input type="hidden" name="scribe_log">
+								<input type="hidden" name="redirect_after_login" value="/signup">
+								<input type="hidden" value="74930792d14c53bec350dcdc7186c8e596a454ea" name="authenticity_token">
+								<div class="divider">
+								</div>
+								<p class="footer-links">
+									<a class="forgot" href="/account/resend_password">비밀번호 찾기</a><br>
+									<a class="mobile has-sms" href="/account/complete">문자 메시지로 이미 트위터를 사용 중인가요?</a>
+								</p>
+								</form:form>
+								</li>
+							</ul>
+							</li>
+						</ul>
+						</c:if>
+						<c:if test="${!empty userInfo}">
+						<ul class="nav secondary-nav session-dropdown">
+							<li class="me dropdown session js-session" data-global-action="t1me" id="user-dropdown">
+							<a class="dropdown-toggle js-dropdown-toggle" href="#" id="user-dropdown-toggle" data-toggle="dropdown">
+							${userInfo.id} <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-caret">
+								<span class="caret-outer"></span>
+								<span class="caret-inner"></span>
+								</li>
+								<li class="current-user" data-name="profile">
+								<a href="#" class="account-summary account-summary-small" data-nav="edit_profile">
+								<div class="content">
+									<div class="account-group js-mini-current-user" data-user-id="129483340" data-screen-name="mouse208">
+										<img class="avatar size32" src="https://si0.twimg.com/profile_images/1157074264/38_4_normal.jpg" alt="최중섭" data-user-id="129483340">
+										<b class="fullname">최중섭</b>
+										<small class="metadata">
+										프로필 수정하기 </small>
+									</div>
+								</div>
+								</a></li>
+								<li class="dropdown-divider"></li>
+								<li class="messages" data-name="messages">
+								<a class="js-dm-dialog" href="/#!/" data-nav="messages">
+								<span class="js-direct-message-count count"></span>
+								쪽지 </a>
+								</li>
+								<li data-name="lists"><a href="/mouse208/lists" data-nav="all_lists">리스트</a></li>
+								<li class="dropdown-divider"></li>
+								<li><a href="//support.twitter.com" data-nav="help_center">도움말</a></li>
+								<li>
+								<a href="#" class="js-keyboard-shortcut-trigger" data-nav="shortcuts">
+								키보드 단축키 </a>
+								</li>
+								<li class="dropdown-divider"></li>
+								<li><a href="/settings/account" data-nav="settings" class="js-nav">설정</a></li>
+								<li>
+								<a class="js-signout-button" id="signout-button" href="#" data-nav="logout">로그아웃</a>
+								<form class="dropdown-link-form signout-form" id="signout-form" action="/logout" method="POST">
+									<input type="hidden" value="aaed537869784c8cbcf7b92999b0f46205ac2bdc" name="authenticity_token" class="authenticity_token">
+									<input type="hidden" name="reliability_event" class="js-reliability-event">
+									<input type="hidden" name="scribe_log">
+								</form>
+								</li>
+							</ul>
+							</li>
+						</ul>
+						</c:if>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  -->          

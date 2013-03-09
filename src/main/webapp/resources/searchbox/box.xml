@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://www.sigames.com/dtds/properties.dtd">
+
+<properties version="1.0">
+	
+	<!-- borders -->
+	<integer id="left_border" value="30"/>
+	<integer id="top_border" value="2"/>
+	<integer id="right_border" value="18"/>
+	<integer id="bottom_border" value="2"/>
+</properties>

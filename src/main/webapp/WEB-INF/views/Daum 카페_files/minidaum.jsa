@@ -1,0 +1,49 @@
+(function() {
+	var minidaum_config = new function() {
+		var minidaum_opts = {
+			nick: '%54%68%65%20%4D%61%6E%61%67%65%72',
+			logInStatus: 'logon',
+			referer: document.referrer,
+			loginUrl: 'http://login.daum.net/accounts/loginform.do',
+			logoutUrl: 'https://logins.daum.net/accounts/logout.do?url=http://www.daum.net/?nil_profile=logout',
+			logoutUrlSvc: 'https://logins.daum.net/accounts/logout.do?url=' + encodeURIComponent(document.referrer),
+			isHttps: (window.location.protocol === 'https:') ? 'yes':'no',
+			tracker:'on',
+			uimode:'',
+			returnSvc: '',
+			homepage: 'on',
+			usecss: '',
+			usebg: '',
+			userank: '',
+			shield: ' ',
+			moreHTML: '',
+			issueHTML: '',
+			callback: '',
+			extra: ' ',
+			version: ''
+		};
+		var minidaum_custom_opts = (typeof window.minidaum_options == 'object') ? window.minidaum_options : {};
+		
+		this.getServerOpts = function() {
+			return minidaum_opts;
+		};
+		this.getCustomOpts = function() {
+			return minidaum_custom_opts;
+		};
+		this.setMoreHTML = function(str) {
+			minidaum_opts.moreHTML = str;
+		};
+	};
+	function loadScript(url) {
+		var script = document.createElement('script');
+		var head = document.getElementsByTagName ("head")[0] || document.documentElement;
+			script.charset = 'utf-8';
+			script.type = 'text/javascript';
+			script.src = url;
+
+			head.insertBefore(script, head.firstChild);
+	};
+	window.minidaum_config = minidaum_config;
+	var jsurl = (window.location.protocol === 'https:') ? 'https://go.daum.net/minidaum/js/summoner_20121130v1.min.js':'http://s1.daumcdn.net/go/minidaum/js/summoner_20121130v1.min.js';
+	loadScript(jsurl + '?1355707552049');
+})();

@@ -1,0 +1,106 @@
+<style type="text/css" id="minidaumStyle">body{background:#fff url(http://i1.daumcdn.net/icon/minidaum/common/minibar_v02.gif) repeat-x;}
+#wrapMinidaum{z-index:999999;height:32px;font-size:11px;line-height:1.5em;font-family:"돋움",dotum,sans-serif;color:#333;text-align:left}
+#wrapMinidaum a{font-size:11px;font-family:"돋움",dotum,sans-serif}
+#minidaum ol, #minidaum ul, #minidaum li{list-style:none}
+#minidaum img, #minidaum fieldset{border:0;padding:0;}
+#minidaum img {vertical-align:top;}
+#minidaum p{margin:0;padding:0}
+#minidaum a {font-size:11px;font-size:11px;color:#333;text-decoration:none}
+#minidaum a:active, #minidaum a:hover {text-decoration:underline}
+#wrapMinidaum .screen_out{display:block;overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:0;line-height:0;text-indent:-9999px}
+#minidaum{position:absolute;top:0;left:0;width:100%;height:22px;letter-spacing:-1px}
+#minidaum .minidaum_layer{z-index:999999}
+#minidaum #minidaumStart{float:left;line-height:17px;margin:7px 17px 0 0;color:#818388}
+#minidaum #minidaumStart.show{display:block}
+.minidaum_gnb{position:absolute;top:7px;right:0;line-height:13px}
+#minidaumUser{position:relative;float:left;margin-right:10px}
+#minidaum .minidaum_login #btnMinidaumLogin{display:none}
+#minidaumUser.minidaum_login{padding:1px 11px 0 0;line-height:16px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat right -57px}
+#minidaumNick{line-height:16px;padding-right:7px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat right 4px;letter-spacing:0}
+#btnMinidaumLogin{float:left;overflow:hidden;width:41px;height:17px;margin:-1px 3px 0 0;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat -100px -270px;text-indent:-3000px;vertical-align:bottom}
+*html #btnMinidaumLogin {margin-top:0}
+#minidaumUserLayer{display:none;position:absolute;top:18px;right:0;width:80px;height:145px;font-size:12px;background:#fff none;border:1px solid #444}
+#minidaumUserLayer.minidaumUserLayer_open{display:block;overflow:hidden}
+#minidaumUserLayer a{font-size:12px}
+#minidaumUserLayer .minidaum_logout{height:19px;padding-top:5px;padding-left:11px;background:#f4f5f7 none}
+#minidaumUserLayer .minidaum_logout a{font-weight:bold}
+#minidaumUserLayer .minidaum_mylayer{padding:7px 0 5px 11px;border-top:1px solid #f1f2f4;letter-spacing:0}
+#minidaumUserLayer .minidaum_mylayer li{height:19px;line-height:19px}
+#minidaumUserLayer .minidaum_myinfo li{height:18px;line-height:18px}
+#minidaumUserLayer .minidaum_myinfo a{color:#777}
+#minidaumService{float:left;padding:1px 0 0 0}
+#minidaumService .minidaum_top_link{padding-right:1px;color:#52555e;font-size:12px;font-family:tahoma;letter-spacing:0}
+.minidaum_service_list{display:inline}
+.minidaum_service_list li{display:inline;line-height:13px;padding-right:8px}
+#minidaumService li a{color:#61646e}
+.minidaum_service_list .minidaum_maple{padding-right:9px}
+.minidaum_service_list .minidaum_news{padding-right:9px}
+.minidaum_service_list .minidaum_new{display:inline-block;overflow:hidden;width:11px;height:12px;margin-left:3px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat -160px -270px;text-indent:-3000px;vertical-align:bottom}
+#minidaumService .minidaum_service_list .minidaum_count{display:inline-block;width:20px;height:13px;margin-top:1px;padding-right:1px;color:#fff;font-size:10px;font-family:verdana;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat -178px -269px;text-align:center;vertical-align:top}
+.minidaum_service_list .minidaum_count *{margin-top:0}
+#minidaumService #minidaumMore{padding:8px 8px 0 0;color:#61646E;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat right -18px}
+#minidaumMoreLayer{display:none;position:absolute;top:18px;right:0;overflow:hidden;width:450px;height:228px;font-size:12px;background:#fff none;border:1px solid #444;letter-spacing:0}
+#minidaumMoreLayer.minidaumMoreLayer_open{display:block}
+#minidaumMoreLayer .minidaum_idx{display:block;position:absolute;top:16px;width:36px;height:13px;}
+#minidaumMoreLayer .minidaum_idx1{left:22px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat 0 -300px}
+#minidaumMoreLayer .minidaum_idx2{left:103px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat -40px -300px}
+#minidaumMoreLayer .minidaum_idx3{left:192px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat -80px -300px}
+#minidaumMoreLayer .minidaum_idx4{left:281px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat -120px -300px}
+#minidaumMoreLayer .minidaum_idx5{left:370px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat -160px -300px}
+#minidaumMoreLayer .minidaum_list_group{float:left;width:88px;height:176px;margin-top:16px;padding-top:20px;border-left:1px solid #ebeef2}
+#minidaumMoreLayer .minidaum_list_group li{overflow:hidden;height:22px;line-height:23px;padding-left:13px}
+#minidaumMoreLayer .minidaum_list_group li a{font-size:12px;white-space:nowrap}
+#minidaumMoreLayer .minidaum_list_group .last{height:18px}
+#minidaumMoreLayer .minidaum_list_group1{width:80px;padding-left:8px;border:none}
+#minidaumMoreLayer .minidaum_all a{padding-right:7px;color:#5279b4;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat right -87px;text-decoration:underline;letter-spacing:-1px}
+#minidaumMoreLayer.minidaum_custom .minidaum_idx{top:49px}
+#minidaum .minidaum_custom{height:258px}
+#minidaum .minidaum_custom .minidaum_list_group{margin-top:49px;}
+#minidaumMoreLayer .minidaum_more_custom{position:absolute;top:0;left:0;overflow:hidden;width:427px;height:33px;padding-left:22px;color:#000;background:#f5f6f8 none;border-bottom:1px solid #f0f1f3}
+#minidaumMoreLayer .minidaum_more_custom a{color:#000;font-size:12px}
+#minidaumMoreLayer .minidaum_more_custom li{float:left;line-height:33px;margin-right:21px}
+#minidaumRank{float:left;position:relative;overflow:hidden;width:191px;height:19px;margin-top:7px;font-size:12px;letter-spacing:0}
+#minidaumRank .minidaum_rank_tit{display:none;height:0;line-height:0;}
+#minidaumRank .minidaum_word{float:left;line-height:17px;padding:0 7px 0 0;font-size:11px;white-space:nowrap}
+#minidaumRank .minidaum_status{float:left;width:7px;height:12px;margin-right:2px;text-indent:-3000px}
+#minidaumRank .minidaum_up{background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat 0 -266px}
+#minidaumRank .minidaum_down{background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat -20px -266px}
+#minidaumRank .minidaum_keep{background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat -40px -266px}
+#minidaumRank .minidaum_new{width:22px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat -60px -266px}
+#minidaumRank .minidaum_num{float:left;line-height:15px;color:#4c4c4c;font-size:10px;font-family:tahoma}
+#minidaumRank .minidaum_rank_list{float:left;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat 0 1px}
+#minidaumRank .minidaum_rank_list li{float:left;clear:both;padding:0 0 0 19px;width:100%;height:23px;line-height:17px}
+#minidaumRank .minidaum_dummy{background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat 0 1px}
+#minidaum .minidaum_rank_open{height:277px;margin-top:3px;font-family:"굴림",gulim;border:1px solid #444;background:#fff none}
+#minidaum .minidaum_rank_open a{font-family:"굴림",gulim}
+#minidaum .minidaum_rank_open li{position:relative}
+#minidaum .minidaum_rank_open .minidaum_rank_list{padding:11px 0 0 0;background-position:14px 12px}
+#minidaum .minidaum_rank_open .minidaum_rank_list li{padding:0 0 0 14px;}
+#minidaum .minidaum_rank_open .minidaum_rank_tit{display:block;height:29px;line-height:31px;color:#565656;font-weight:bold;background:#f4f5f7;border-bottom:1px solid #dbdbdb;text-align:center;letter-spacing:-1px}
+#minidaum .minidaum_rank_open .minidaum_word{overflow:hidden;width:115px;margin-right:3px;padding:0 0 0 22px;font-size:12px}
+#minidaum .minidaum_rank_open .minidaum_dummy{display:none}
+.minidaum_rank_open .minidaum_select .minidaum_word {font-weight:bold;letter-spacing:-1px}
+#minidaum .minidaum_shield{position:absolute;top:0;left:0;z-index:-1;border:1px solid #fff;}
+#minidaumExtra{position:relative;float:left;padding:0 0 0 20px;line-height:16px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat -189px -57px}
+#minidaumExtra #minidaumApps{position:relative;float:left;padding:1px 0 0 0;color:#333;line-height:16px;font-weight:bold;padding-right:19px;}
+#minidaumExtra #minidaumApps span{position:absolute;top:0;right:0;width:17px;height:15px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat 0px -450px;}
+#minidaumAppsLayer{display:none;position:absolute;top:18px;right:0;overflow:hidden;width:312px;font-size:12px;background:#fff none;border:1px solid #7887E5;letter-spacing:0}
+#minidaumAppsLayer.minidaumAppsLayer_open{display:block;}
+#minidaumAppsLayer .minidaum_extra_content{padding:20px 0 12px 24px;}
+#minidaumAppsLayer .minidaum_extra_title{line-height:13px;font-size:12px;color:#3d3d3d;font-weight:bold;}
+#minidaumAppsLayer .minidaum_extra_desc{font-size:11px;color:#a1a3aa;margin-top:11px;letter-spacing:-1px;}
+#minidaumAppsLayer .minidaum_extra_qrcode{position:absolute;top:21px;right:33px;padding:4px;border:1px solid #7588ff;}
+#minidaumAppsLayer .minidaum_extra_form{position:relative;margin:4px 0 12px 0;width:165px;height:25px;border:1px solid #a6adb8;}
+#minidaumAppsLayer .minidaum_extra_form input{border:0 none;padding:0;margin:1px 0 0 5px;width:111px;height:23px;line-height:25px;-webkit-appearance: none;}
+#minidaumAppsLayer .minidaum_extra_form button{position:absolute;top:0;right:0;border:0 none;width:43px;height:25px;line-height:25px;border-left:1px solid #a6adb8;margin:0;padding:0;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat 0 -330px}
+#minidaumAppsLayer .minidaum_extra_event{height:15px;line-height:15px;font-size:11px;letter-spacing:-1px;background-repeat:no-repeat;}
+#minidaumAppsLayer .minidaum_extra_event a{color:#656774;font-size:11px;}
+#minidaumAppsLayer .minidaum_extra_content p.event{padding-left:33px;background-image:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif);background-position:0 -360px;}
+#minidaumAppsLayer .minidaum_extra_content p.event a{color:#e06d45;}
+#minidaumAppsLayer .minidaum_extra_footer{height:31px;padding-left:17px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) 0 -390px;}
+#minidaumAppsLayer .minidaum_extra_footer li{float:left;height:16px;line-height:16px;margin-top:8px;padding:0 6px 0 6px;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat right -57px}
+#minidaumAppsLayer .minidaum_extra_footer li.last{background:none;}
+#minidaumAppsLayer .minidaum_extra_footer li a{color:#656774;}
+#minidaumAppsLayer .minidaum_extra_footer li a.minidau_extra_open{font-weight:bold;}
+#minidaumAppsLayer .minidaum_extra_close{position:absolute;top:0;right:0;border:0 none;width:32px;height:29px;margin:0;padding:0;text-indent:-9999em;overflow:hidden;background:url(http://i1.daumcdn.net/icon/minidaum/common/minidaum_v07.gif) no-repeat 10px -481px;cursor:pointer;}
+</style>

@@ -1,0 +1,41 @@
+                          <style>
+              .pocket a { display:inline; border-top: 0px solid; padding: 0px;}
+              .pocket .content { margin: 0px auto; width: 98%; } 
+              .pocket .content img { border-top: 1px solid #EEE;}
+              .pocket .content a {
+                display: block;
+                float: left;
+              /* width: 121px; */
+                margin-bottom: 10px;
+                margin-right: 65px;
+                border: 1px solid #EEE;
+                border-radius: 3px;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                background-color: #F8F8F8;
+                text-decoration: none;
+                color: #0094C2;
+              }
+              .pocket .content a:hover {
+                background-color: #EDEDED;
+                border: 1px solid #CCC;
+              }
+              .pocket .content img {
+              /*  width: 120px;
+                height: 141px;*/
+                border-top: 1px solid #EEE;
+                border-bottom: 1px solid #EEE;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+                -moz-border-radius-topleft: 3px;
+                -moz-border-radius-topright: 3px;
+                -webkit-border-top-left-radius: 3px;
+                -webkit-border-top-right-radius: 3px;
+              }
+              .pocket .content span {
+                display: block;
+                text-align: center;
+                padding: 0.3em 0 0.55em 0;
+                font-size: 1em;
+              }
+                          </style>

@@ -1,0 +1,179 @@
+
+
+
+.modal_box h1 {
+	padding-left:20px;
+}
+
+.modal_box p {
+	padding-left:20px;
+}
+
+
+
+.modal_buttons a.btn_white {
+	float: left;
+}
+
+.modal_buttons a.btn_white.leftbtn {
+	margin-right: 16px;	
+	
+}
+
+.modal_buttons {
+}
+
+
+#modalBG {
+	position:absolute;
+	z-index:900;
+	background-color:#000000;
+	filter:alpha(opacity=60);
+	opacity:0.8;
+}
+
+.modal_frame {
+	width:508px;
+	position:absolute;
+	z-index:1000;
+	background-color:#000000;
+}
+
+.auth_message_area {
+	position: relative;
+	padding-left: 70px;
+	min-height: 92px;
+}
+
+.auth_icon {
+	position: absolute;
+	top: 16px;
+	left: 0px;
+	width: 67px;
+	height: 48px;
+
+	background-image: url( https://steamcommunity.com/public/images/login/emailauth_icons.png );
+	background-repeat: no-repeat;
+}
+
+.auth_icon.auth_icon_trash {
+	background-position: center 0px;
+}
+
+.auth_icon.auth_icon_key {
+	background-position: center -48px;
+}
+
+.auth_icon.auth_icon_lock {
+	background-position: center -96px;
+}
+
+.auth_icon.auth_icon_unlock {
+	background-position: center -144px;
+}
+
+.auth_icon.auth_icon_steam {
+	background-position: center -192px;
+}
+
+.auth_icon.ipt_icon {
+	background-image: url( https://steamcommunity.com/public/images/login/ipt_lockout_icon.png );
+	height: 62px;
+	width: 53px;
+
+	left: 12px;
+	top: 6px;
+}
+
+.auth_details_messages {
+	color: #85847f;
+	font-size: 12px;
+	height: 38px;
+}
+
+.authcode_entry_area {
+	height: 32px;
+	margin-top: 4px;
+	margin-bottom: 6px;
+}
+
+.authcode_entry_box {
+	background-image: url( https://steamcommunity.com/public/images/login/emailauth_code_entry.png );
+	background-repeat: no-repeat;
+	width: 220px;
+	height: 27px;
+}
+
+input.authcode_entry_input {
+	border: none;
+	background-color: #646362;
+	margin-left: 34px;
+	margin-top: 6px;
+	color: #cdcac1;	
+	outline: none;
+	
+	position: static;
+	top: 0px;
+}
+
+input.authcode_entry_input.defaulttext {
+	font-style: italic;
+}
+
+#auth_buttonsets {
+	height: 66px;
+}
+
+#auth_buttonset_waiting {
+	height: 66px;
+	
+	background-image: url( https://steamcommunity.com/public/images/login/throbber.gif );
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.auth_button {
+	background-image: url( https://steamcommunity.com/public/images/login/emailauth_button.png );
+	background-repeat: no-repeat;
+	width: 219px;
+	height: 66px;
+}
+
+.auth_button.auth_button_spacer {
+	background-image: none;
+}
+
+a.auth_button, a.auth_button:hover {
+	display: block;
+	text-decoration: none;
+}
+
+.auth_button h3 {
+	font-weight: normal;
+	font-size: 18px;
+	color: #ffffff;
+	padding: 6px 12px 0px 12px;
+}
+
+.auth_button h5 {
+	font-size: 12px;
+	color: #adaca6;
+	padding: 0px 12px 0px 12px;
+	text-transform: none;
+}
+
+
+
+.modal_buttons .auth_button {
+	float: left;
+}
+
+.modal_buttons a.auth_button.leftbtn {
+	margin-right: 16px;		
+}
+
+#loginIPTModal .modal_box {
+	background-image: url( https://steamcommunity.com/public/images/login/ipt_lockout_bg.png );
+	width: 466px;
+	height: 231px;
+}

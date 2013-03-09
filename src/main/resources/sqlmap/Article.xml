@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="article">
+
+
+    <!--   -->
+    <select id="getArticleList" parameterType="hashmap" resultType="hashmap">
+        
+        SELECT 
+            WR_ID, WR_NUM, WR_REPLY, WR_PARENT, WR_IS_COMMENT, WR_COMMENT, WR_COMMENT_REPLY,
+            CA_NAME, WR_OPTION, WR_SUBJECT, WR_CONTENT, WR_LINK1, WR_LINK2, WR_LINK1_HIT, WR_LINK2_HIT,
+            WR_TRACKBACK, WR_HIT, WR_GOOD, WR_NOGOOD, MB_ID, WR_PASSWORD, WR_NAME, WR_EMAIL, WR_HOMEPAGE,
+            WR_DATETIME, WR_LAST, WR_IP, WR_1, WR_2, WR_3, WR_4, WR_5, WR_6, WR_7, WR_8, WR_9, WR_10 
+        FROM IS_BOARD        
+        
+        <where> 
+            <if test="type != null and keyword != null">
+                ${type} LIKE ${keyword}
+            </if>
+        </where>
+                
+        LIMIT ${startArticleNum}, ${endArticleNum}
+        
+    </select>  
+
+
+
+    <select id="getTotalNum" parameterType="hashmap" resultType="int">
+        SELECT COUNT(*) FROM IS_BOARD 
+        
+        <where> 
+            <if test="type != null and keyword != null">
+                ${type} LIKE ${keyword}
+            </if>
+        </where>
+        
+    </select>
+    
+</mapper>

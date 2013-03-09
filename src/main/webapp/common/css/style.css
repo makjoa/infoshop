@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+
+/* tag */
+
+* {
+	font-family: 돋움;
+	font-size: 12px;
+}
+
+.label {
+	margin: 10px 0 10px 0;
+	display: inline-table;
+	width: 100px;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+a:link {	/* 방문하지 않았을 때 */
+	text-decoration:none;
+	color:#006699;
+}
+a:visited {	/* 방문했을 때 */
+	text-decoration:none;
+	color:#006699;
+}
+a:hover {	/* 마우스가 위로 올라갔을 때 */
+	text-decoration: underline;
+	color:#006699;
+}	
+a:active {	/* 링크가 화성화. 즉 클릭했을 때 */
+	text-decoration:none;
+	color:#006699;
+}
+
+a img {
+	border: 0px;
+}
+
+/* id */
+
+#wrap {
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+#head {		/* 헤더 영역 */
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 3px;
+}
+
+#paging {	/* 페이징 영역 */
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#paging .btn {		/* 페이징에서 하나의 버튼 */
+	margin: 0px;
+	padding: 5px;
+	background-color: #f9f9f9;
+	border: solid 1px #c3c3c3;
+	cursor: pointer;
+}
+
+.buttons {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	text-align: right;
+}
+
+/* class */
+
+.line {
+	border-top: 1px dashed #c3c3c3;
+}

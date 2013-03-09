@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0044)http://sug.search.daum.net/suggestProxy.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+<title>Daum Suggest</title> 
+<script type="text/javascript"> 
+<!--
+	document.domain="daum.net";
+	var callbackFunction = function(){};
+	var getData = function( keyword, url, callback ) {
+		if( !!url ) {
+			url = url.replace(/KEYWORD/g, keyword);
+		} else {
+			alert("RequestUrl이 존재하지 않습니다.");
+			return;
+		}
+
+		callbackFunction = callback;
+
+		if ( window.XMLHttpRequest ) {
+			req = new XMLHttpRequest();
+			try {
+				req.onreadystatechange = setData;
+				req.open("GET", url, true);
+				req.send(null);
+			} catch (e) {
+				alert( "Suggest Frame [request] : " + e.toString() );
+			}
+		} else if (window.ActiveXObject) {
+			req = new ActiveXObject("Microsoft.XMLHTTP");
+ 			if (req) {
+				req.onreadystatechange = setData;
+				req.open("GET", url, true);
+				req.send();
+			}
+		}
+	}
+ 
+	var setData = function() {
+		if (req.readyState == 4) {
+			if (req.status == 200 || req.status == 0) {
+				if( typeof callbackFunction == "function"){
+					callbackFunction(req.responseText);
+				} else {
+					alert("CallbackFunction이 존재하지 않습니다.");
+				}
+			 } else {
+				alert(req.statusText);
+			 }
+		}
+	}
+//-->
+</script> 
+<style type="text/css"></style><script type="text/javascript" id="imideo-extension-info">var imideo_extension=true;</script></head> 
+<body style="margin:0;padding:0"> 
+</body></html>

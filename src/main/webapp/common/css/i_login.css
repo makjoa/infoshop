@@ -1,0 +1,18 @@
+#your{position:absolute;top:0;right:0;width:180px;height:105px;background:url(http://i1.daumcdn.net/deco/top/2012/bg_v07.png) no-repeat 0 -200px}
+
+#id{position:absolute;top:16px;left:17px;width:140px;height:22px;line-height:25px;padding-left:10px;border:none;ime-mode:disabled}
+#inputPwd{position:absolute;top:43px;left:17px;width:140px;height:22px;line-height:24px;padding-left:10px;border:none}
+#id.empty{background:url(http://i1.daumcdn.net/deco/top/2012/dec_v06.png) no-repeat -90px 8px}
+#inputPwd.empty{background:url(http://i1.daumcdn.net/deco/top/2012/dec_v06.png) no-repeat -90px -43px}
+#loginSubmit{float:right;width:51px;height:55px;margin:15px 57px 0 0;border:none;background:#fff url(http://i1.daumcdn.net/deco/top/2012/dec_v06.png) no-repeat 0 -50px;cursor:pointer}
+#loginSubmit .submit_desc{display:block;position:relative;width:49px;height:53px;line-height:29px;border:1px solid #868ea1;background-color:#fff;color:#3f4a58;font-weight:bold;z-index:-1}
+#sid{position:absolute;bottom:12px;left:15px;width:13px;height:13px;line-height:13px;margin:0;padding:0}
+#lbSid{position:absolute;bottom:13px;left:33px;height:11px;line-height:13px;color:#6d7078;font-size:11px;letter-spacing:-1px;overflow:hidden}
+#loginForm .user{position:absolute;bottom:10px;left:79px}
+#loginForm .user_li{float:left;line-height:15px}
+#loginForm .join{font-weight:bold}
+#loginForm .find{padding-left:16px}
+#loginForm .join .join_a{float:left;color:#434a55;font-size:11px;letter-spacing:-1px}
+#loginForm .find .find_a{float:left;color:#74787f;font-size:11px;letter-spacing:-1px}
+#loginForm .find .pwd{padding-left:5px;background:url(http://i1.daumcdn.net/deco/top/2012/ico_v05.png) no-repeat 2px -694px}
+#loginForm .setting{position:absolute;top:15px;right:19px;width:23px;height:60px}

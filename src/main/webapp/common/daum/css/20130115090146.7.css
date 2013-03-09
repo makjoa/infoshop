@@ -1,0 +1,266 @@
+@charset "euc-kr";
+
+/* background */
+
+body, .bg, .cafeon, .cafeon_search .inp_search, .cafeon_search, .cafegroup .inp, .cafeLayer, .inp	{background-color: #ffffff;}
+
+.bg_sub, #cafeLayout .blank_thumb, .blank_thumb, .cafeLayer a:hover, #write_etcset_detial, .multi_post_layer_inBox	{background-color: #f7f7f7;}
+.commentBox .num_box	{border-color: #f7f7f7;}
+
+.scroll	{scrollbar-face-color: #f5f5f5; scrollbar-shadow-color: #ebebeb;
+	scrollbar-highlight-color: #fefefe; scrollbar-3dlight-color: #dddddd;
+	scrollbar-darkshadow-color: #cdcdcd; scrollbar-track-color: #f7f7f7; scrollbar-arrow-color: #a4a4a;}
+
+/* line color */
+#cafeLayout .line, .line, .home_bbsList td, .home_memo ul, .home_memo li, .inp, .cafeon_search, .cafeon_search .btn_search, .cafeon_search .btn_search_all, 
+.bbsList td, .cafeLayer,  .cafeLayer li.layer_dotline, .boxTable .cb, .lineT, .write_etcset_ccl, #write_etcset_detial, .multi_post_layer_inBox, .box, #album_navi td,
+#cafeLayout .blank_thumb, .blank_thumb, .component .blank_thumb	{border-color: #e9e9e9;} /* °¡Àå ¸¹ÀÌ »ç¿ëÇÏ´Â ¶óÀÎ»ö */
+.bar2, #footer .bar2	{color: #e9e9e9;}
+.linebg	{background-color: #e9e9e9;}
+
+.line_sub, .bbsList th, .cafeSearchBox .inp, .article_subject, .box_sub, #rssList li, .rssList_tit	{border-color: #d5d5d5;}
+.linebg_sub	{background-color: #d5d5d5;}
+
+/* cafeon */
+.cafeon_search .btn_search {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_cafeon_search.png);}
+* html .cafeon_search .btn_search {background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_cafeon_search.png", sizingMethod="crop");}
+.cafeon_search .btn_search_all {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_cafeon_list.gif);}
+
+/*** cafe_gnb - minidaum ***/
+#minidaum #cafe_favCafeList, #minidaum #goServiceLayer	{background-color: #ffffff;}	/* bg */
+#minidaum #cafe_favCafeList a:hover, #minidaum #cafe_favCafeList a.system:hover, #minidaum #goServiceLayer.cafeLayer li a:hover	{background-color: #d5d5d5;}	/* bg_sub */
+#minidaum #cafe_favCafeList, #minidaum #cafe_favCafeList li.favor_line, #minidaum #goServiceLayer, #minidaum #goServiceLayer.cafeLayer li.layer_dotlin	{color: #d5d5d5;} /* line color */
+#minidaum #goServiceLayer.cafeLayer li a:link, #minidaum #goServiceLayer.cafeLayer li a:visited, #minidaum #goServiceLayer.cafeLayer li a:active	{color: #999999;} /* font color */
+#minidaum #cafe_favCafeList .newdt a:link, #minidaum #cafe_favCafeList .newdt a:visited, #minidaum #cafe_favCafeList .newdt a:hover, #minidaum #cafe_favCafeList .newdt a:active	{color: #ef343b;}	/* txt_point */
+#minidaum li a.out  {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/icon_view.gif);}
+#minidaum li a.over  {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/icon_hide.gif);}
+#minidaum #cafe_favCafeTitle {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/icon_view.gif);}
+#minidaum #cafe_favCafeTitle.on { background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/icon_hide.gif);}
+#minidaum .btn_txt	{color: #999999;}
+#cafe_favCafeList .scroll	{scrollbar-face-color: #f5f5f5; scrollbar-shadow-color: #ebebeb;
+	scrollbar-highlight-color: #fefefe; scrollbar-3dlight-color: #dddddd;
+	scrollbar-darkshadow-color: #cdcdcd; scrollbar-track-color: #f7f7f7; scrollbar-arrow-color: #a4a4a;}
+
+/* minidaum go service */
+#minidaum #daumServiceLink {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/icon_view.gif);}
+#minidaum #daumServiceLink.on { background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/icon_hide.gif);}
+#minidaum #daumServiceLayer {background-color: #ffffff;}	/* bg */
+#minidaum #daumServiceLayer ul { color: #d5d5d5;}
+#minidaum #daumServiceLayer li a:hover {background-color: #d5d5d5;}
+#minidaum #daumServiceLayer li a:link, #minidaum #daumServiceLayer li a:visited, #minidaum #daumServiceLayer li a:active {color: #999999;}
+
+/* bgm*/
+.bgm_volumebg	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/bgm_bar01.gif);}
+.bgm_volume	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/bgm_bar02.gif);}
+.icon_bgmcontrol	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/bgm_scroll.gif);}
+.btn_bgm_back	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/bgm_back.gif);}
+.btn_bgm_stop	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/bgm_stop.gif);}
+.btn_bgm_play	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/bgm_play.gif);}
+.btn_bgm_next	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/bgm_front.gif);}
+.btn_bgm_list	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/icon_list.gif);}
+
+/* icon */
+.icon_guide	{background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/icon_guide.gif);}
+.icon_noti	{background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/icon_noti.gif);}
+.icon_recom	{background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/icon_recommend.gif);}
+.icon_lock2	{background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/icon_lock.gif);}
+.icon_slide_prev	{background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/icon_left.gif);}
+.icon_slide_next	{background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/icon_right.gif);}
+
+/* btn b13_03 */
+.bg01 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg01.gif?v=4);}
+.bt01 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg01.gif?v=4);}
+.bg02 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg02.gif?v=4);}
+.bt02 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg02.gif?v=4);}
+.bg03 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg03.gif?v=4);}
+.bt03 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg03.gif?v=4);}
+.bg04 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg04.gif?v=4);}
+.bt04 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg04.gif?v=4);}
+.bg05 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg05.gif?v=4);}
+.bt05 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg05.gif?v=4);}
+.bg06 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg06.gif?v=4);}
+.bt06 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg06.gif?v=4);}
+.bg07 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg07.gif?v=4);} /* minidaum login btn */
+.bt07 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg07.gif?v=4);}
+.bg08 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg08.gif?v=4);}
+.bt08 {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg08.gif?v=4);}
+
+/* for new button style */
+.bt01n {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg01.gif?v=4);}
+.bt02n {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg02.gif?v=4);}
+.bt03n {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg03.gif?v=4);}
+.bt04n {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg04.gif?v=4);}
+.bt05n {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg05.gif?v=4);}
+.bt06n {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg06.gif?v=4);}
+.bt07n {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg07.gif?v=4);}
+.bt08n {background-image:url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/btn_bg08.gif?v=4);}
+
+.btn_icon_select	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bg/b13_03/icon_select.gif); background-position: 0 40%; background-repeat: no-repeat; padding-left: 14px;}
+* html .btn_icon_select	{width: 60px;}
+	.cafeinfoBox	{
+				background-color: transparent; padding: 0;
+			}
+	.cafeinfoBox, .cafeinfoBox a:link, .cafeinfoBox a:visited, .cafeinfoBox a:hover, .cafeinfoBox a:active	{color: #444444;}
+	.cafeinfoBox .infoLine	{
+				background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/cafeinfo/b11_5_bg_line.gif); background-repeat: repeat-x; border: none;
+			}
+	
+	.cafeinfoBox .txt_point, .cafeinfoBox a.txt_point:link, .cafeinfoBox a.txt_point:visited, .cafeinfoBox a.txt_point:hover, .cafeinfoBox a.txt_point:active	{color: #f16f31;}
+
+	.cafeTab a.txt_title1:link, .cafeTab a.txt_title1:visited, .cafeTab a.txt_title1:hover, a.txt_title1:active,
+	.myTab a.txt_title2:link, .myTab a.txt_title2:visited, .myTab a.txt_title2:hover, .myTab a.txt_title2:active {color: #6c6c6c;}
+
+	.cafeTab a.txt_title2:link, .cafeTab a.txt_title2:visited, .cafeTab a.txt_title2:hover, .cafeTab a.txt_title2:active,
+	.myTab a.txt_title1:link, .myTab a.txt_title1:visited, .myTab a.txt_title1:hover, a.txt_title1:active {color: #b0afb1;}
+	
+		.cafeinfoBoxT	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/cafeinfo/b11_5_bg.gif); height: 11px;}
+	.cafeinfoBox.group .cafeinfoBoxT	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/cafeinfo/b11_5_bg.gif); overflow: hidden; height: 11px;}
+	.cafeinfo_bg	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/cafeinfo/b11_5_bg.gif); background-color: transparent; background-position: 0 -40px;}
+	.group .cafeinfo_bg	{background-position: 0 0; padding-top: 11px;}
+	#info_tab	{background-color: transparent;}
+	#info_tab li a	{display: block; margin: 9px 0 1px 0;}
+	.cafeTab	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/cafeinfo/b11_5_tab_cafe.gif);}
+	.myTab	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/cafeinfo/b11_5_tab_my.gif);}
+	.infobox_line   {opacity: 1; -moz-opacity: 1; filter: alpha(opacity=100); -ms-filter:'alpha(opacity=100)';}
+	
+	
+
+		.btn_write {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/cafeinfo/b11_5_btn_write.png); background-repeat: no-repeat; width: 159px; height: 35px;} 
+    * html .btn_write {background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://i1.daumcdn.net/cafeimg/cf_img4/cafeinfo/b11_5_btn_write.png", sizingMethod="crop"); }	
+	.btn_join {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/cafeinfo/b11_5_btn_entry.png); background-repeat: no-repeat; width: 159px; height: 35px;} 
+    * html .btn_join {background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://i1.daumcdn.net/cafeimg/cf_img4/cafeinfo/b11_5_btn_entry.png", sizingMethod="crop"); }
+	.btn_register2 {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/cafeinfo/b11_5_btn_regi.png); background-repeat: no-repeat; width: 50px; height: 48px;} 
+    * html .btn_register2 {background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://i1.daumcdn.net/cafeimg/cf_img4/cafeinfo/b11_5_btn_regi.png", sizingMethod="crop"); }    
+    
+
+/* menu */
+	.menuBox	{background-image: none; background-repeat: repeat-y; background-color: transparent; border: 0;}
+	.menuBoxT	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/bg_t.gif); background-repeat: no-repeat; height: 16px; overflow: hidden;}
+	.menuBoxB	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/bg_b.gif); background-repeat: no-repeat; height: 16px; overflow: hidden;}
+	.menuList	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/bg_c.gif); padding: 0;}
+	.menuList .group_line	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/bg_line.gif); background-repeat: repeat-x;}
+
+.menuList, .menuList a:link, .menuList a:visited, .menuList a:hover, .menuList a:active {color: #444444;}
+
+.menuList .group_bg	{
+}
+.menuList .group_tit, .menuList .group_tit a:link, .menuList .group_tit a:visited, .menuList .group_tit a:hover, .menuList .group_tit a:active,
+.menuList .group_ic, .menuList .group_ic a:link, .menuList .group_ic a:visited, .menuList .group_ic a:hover, .menuList .group_ic a:active {color: #6c6c6c;}
+
+	.menuList .group_ic span	{display: none;}
+
+		.menuList ul li	{background-position: 12px 2px; padding: 0 5px 2px 28px;}
+		.menuList img.icon_indent	{margin-right: 20px;}
+	.icon_know	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_know.gif);}
+	.icon_lock	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_lock.gif);}
+	.icon_memo	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_memo.gif);}
+	.icon_phone	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_phone.gif);}
+	.icon_album	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_album.gif);}
+	.icon_board	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_board.gif);}
+	.icon_link	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_link.gif);}
+	.icon_plus	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_board.gif);}
+	.icon_rss	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_rss.gif);}
+	.icon_recent 	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_new.gif);}
+	.icon_etc	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_etc.gif);}
+	.icon_best	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_best.gif);}
+	.icon_movie_all	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_movie.gif);}
+	.icon_yozm 	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_yozm.gif);}
+	.icon_escrow {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_market.gif);}
+	.icon_indent	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_indent.gif); width: 11px; height: 11px;}	
+	.icon_view01	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_view.gif);}
+	.icon_view02	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/b11_5/icon_hide.gif);}
+
+	.searchBox	{background-image: none;}
+	.searchBox .inp_search	{background-image: transparent; width: 136px; padding: 3px 0 2px 3px; background-color: #f2f0e9; color: #48453b; border-width: 1px; border-style: solid; 
+		border-top-color: #d4d2c5; border-left-color: #d4d2c5; border-right-color: #e1dfd3; border-bottom-color: #e1dfd3;}
+	.searchBox .btn_search	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/search/b14_4_btn_search.gif); background-repeat: no-repeat; width: 37px; height: 21px; top: 1px;}
+
+.list_title, .list_title a:link, .txt_tit_point, a.txt_tit_point:link, .list_title a:visited, a.txt_tit_point:visited, .list_title a:hover, .list_title a:active, a.txt_tit_point:hover, a.txt_tit_point:active {color: #474f2d;}
+
+.list_title_sub, a.list_title_sub:link, a.list_title_sub:visited, a.list_title_sub:hover, a.list_title_sub:active {color: #474f2d;}
+.line_title_sub	{border-color: #474f2d;}
+
+.list_title	{background-color: transparent;
+	background-color: transparent; border: 0px;
+}
+
+.list_title .list_txt_tit	{
+			background-image: transparent; background-position: 0 0; background-repeat: no-repeat; padding: 7px 0 4px 12px;
+	}
+
+	.list_title .list_txt_tit	{font-size: 14px; font-family:µ¸¿ò, dotum,sans-serif; letter-spacing: -1px;}
+	.list_title .list_txt_tit a:link {font-size: 14px; font-family:µ¸¿ò, dotum,sans-serif; text-decoration: none; letter-spacing: -1px;}
+	.list_title .list_txt_tit a:visited {font-size: 14px; font-family:µ¸¿ò, dotum,sans-serif; text-decoration: none; letter-spacing: -1px;}
+	.list_title .list_txt_tit a:hover, .list_title .list_txt_tit a:active {font-size: 14px; font-family:µ¸¿ò, dotum,sans-serif; text-decoration: underline; letter-spacing: -1px;}
+
+	.list_title .title	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bbs/b23_3/tit_bg.gif); background-position: 0 0; background-repeat: no-repeat;}
+	.list_title .more_tit	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bbs/b23_3/tit_bg.gif); background-position: 100% 0; background-repeat: no-repeat; height: 33px; padding: 0;}
+	.list_title .more span, .list_title .arrowR	{display: none;}
+		.list_title .more_img	{background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/bbs/b23_3/btn_more.gif); background-position: 0 0; background-repeat: no-repeat; width: 70px; height: 33px;}
+	
+#content, textarea, .inp, a:link, a:visited, a:hover, a:active	{color: #5c5c5c}
+
+.txt_sub, .txt_sub a:link, .txt_sub a:visited, .txt_sub a:hover, .txt_sub a:active, a.txt_sub:link, a.txt_sub:visited, a.txt_sub:hover, a.txt_sub:active {color: #999999}
+
+.txt_point,	.txt_point a:link, .txt_point a:visited, .txt_point a:hover, .txt_point a:active, a.txt_point:link, a.txt_point:visited, a.txt_point:hover, a.txt_point:active, a.num_box:hover {color: #789500;} 
+a.num_box:hover, .box_point {border-color: #789500;} 
+.txt_point_bg	{background-color: #789500;} 
+
+
+
+/* component_basic */
+.component, .component a:link, .component a:visited, .component a:hover, .component a:active	{color: #5c5c5c;}
+#sidebar1 .component .blank_thumb, #sidebar2 .component .blank_thumb, #sidebar3 .component .blank_thumb, #sidebar4 .component .blank_thumb	{border-color: #5c5c5c; background-color: #5c5c5c;}
+.component_tit_line	{border-bottom: 1px solid #5c5c5c;}
+
+.component .txt_point, .component .txt_point a:link, .component .txt_point a:visited, .component .txt_point a:hover, .component .txt_point a:active, .component a.txt_point:link, 
+.component a.txt_point:visited, .component a.txt_point:hover, .component a.txt_point:active	{color: #ed6a4d;}
+
+.component h4	{
+	background-image: transparent; background-position: 0 0; padding-left: 3px;
+}
+
+		.component .outBox, .component .outBoxT, .component .outBoxC	{background-color: transparent; background-image: transparent;}
+	
+.grph_wrap dl dd {background-color: #ed6a4d !important;}
+.grph_tooltip {background-color: #ffffff !important; border-color: #ed6a4d !important;}
+
+.cafeinfoBox .txt_point, .cafeinfoBox a.txt_point:link, .cafeinfoBox a.txt_point:visited, .cafeinfoBox a.txt_point:hover, .cafeinfoBox a.txt_point:active {color: #b98b3e;}
+.menuList, .menuList a:link, .menuList a:visited, .menuList a:hover, .menuList a:active {color: #000000;}  .menuList .group_tit, .menuList .group_tit a:link, .menuList .group_tit a:visited, .menuList .group_tit a:hover, .menuList .group_tit a:active,  .menuList .group_ic a:link, .menuList .group_ic a:visited, .menuList .group_ic a:hover, .menuList .group_ic a:active {color: #662500;}    .menuList ul li {background-position: 12px 2px; padding: 0 5px 2px 28px;}  .menuList img.icon_indent {margin-right: 20px;} .icon_know {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_know.gif);} .icon_lock {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_lock.gif);} .icon_memo {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_memo.gif);} .icon_phone {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_phone.gif);} .icon_album {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_album.gif);} .icon_board {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_board.gif);} .icon_link {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_link.gif);} .icon_plus {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_store.gif);} .icon_rss {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_rss.gif);} .icon_recent {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_new.gif);} .icon_favor {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_new.gif);} .icon_etc {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_etc.gif);} .icon_best {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_best.gif);} .icon_movie_all {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_movie.gif);} .icon_indent {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_indent.gif); width: 11px; height: 11px;} .icon_escrow {background-image: url(http://i1.daumcdn.net/cafeimg/cf_img4/menu/23/icon_market.gif);}
+
+
+
+.bbsList td.subject, .bbsList td.subject_guide, .article_subject .subject span.b, .user_contents, .albumList .subject a.subject_pt, .protectTable td {font-size: 12px;} #content, #content td.cb, #content table, #content th, #content td, textarea, .inp, a:link, a:visited, a:hover, a:active, a.btn:link, a.btn:visited, a.btn:hover, a.btn:active, .btn_txt, .commentDiv td,  .admin_btn_area, .admin_area, .admin_area a.p11, .txt a:link, .txt a:visited, .txt a:hover, .txt a:active, a.txt:link, a.txt:visited, a.txt :hover, a.txt:active, .txt {color: #4c4c4c;}#content .txt_sub, .txt_sub, .txt_sub a:link, .txt_sub a:visited, .txt_sub a:hover, .txt_sub a:active, a.txt_sub:link, a.txt_sub:visited, a.txt_sub:hover, a.txt_sub:active {color: #a5a5a5;}.txt_point, .txt_point a:link, .txt_point a:visited, .txt_point a:hover, .txt_point a:active, a.txt_point:link, a.txt_point:visited, a.txt_point:hover, a.txt_point:active, a.num_box:hover {color: #662500;}a.num_box:hover, .box_point {border-color: #662500;} .txt_point_bg {background-color: #662500;}
+.component {color: #476600;} .component a:link {color: #476600;} .component a:visited {color: #476600;} .component a:hover, .component a:active {color: #476600;} .component_tit_line {border-bottom: 1px solid #476600;} .component .txt_point {color: #000000;} .component .txt_point a:link {color: #000000;} .component .txt_point a:visited {color: #000000;} .component .txt_point a:hover, .component .txt_point a:active {color: #000000;}  .component a.txt_point:link {color: #000000;} .component a.txt_point:visited {color: #000000;} .component a.txt_point:hover, .component a.txt_point:active {color: #000000;}  .grph_wrap dl dd {background-color: #000000 !important;} .grph_tooltip {border-color:#000000 !important;}
+
+
+
+
+
+						#TITLEMENUGROUP {width:100%; height:37px; background-color:transparent;}
+			#TITLEMENUGROUP ul {margin:0 20px; background:url(http://i1.daumcdn.net/cafeimg/cf_img4/title/b01_2/bar_c.png) repeat-x;}
+			#TITLEMENUGROUP .roundL {position:absolute; top:0; left:0; width:20px; height:37px; background:url(http://i1.daumcdn.net/cafeimg/cf_img4/title/b01_2/bar_l.png) no-repeat;}
+			*html #TITLEMENUGROUP .roundL {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i1.daumcdn.net/cafeimg/cf_img4/title/b01_2/bar_l.png', sizingMethod='crop');}
+			#TITLEMENUGROUP .roundR {position:absolute; top:0; right:0; width:20px; height:37px; background:url(http://i1.daumcdn.net/cafeimg/cf_img4/title/b01_2/bar_r.png) no-repeat;} 
+			*html #TITLEMENUGROUP .roundR {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i1.daumcdn.net/cafeimg/cf_img4/title/b01_2/bar_r.png', sizingMethod='crop');}
+			#TITLEMENUGROUP li.mbar {color:#999999;}
+			#TITLEMENUGROUP li a {color:#999999;}
+			#TITLEMENUGROUP li a.first {margin-left:0;}
+						#TITLEMENUGROUP li.on a {color:#444444;}
+			
+#TITLESEARCH .searchBg {width:190px; height:23px; background:url(http://i1.daumcdn.net/cafeimg/cf_img4/title/b14_4/search_box.png) no-repeat;}
+* html #TITLESEARCH .searchBg {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://i1.daumcdn.net/cafeimg/cf_img4/title/b14_4/search_box.png, sizingMethod=crop);}
+#TITLESEARCH .inpSearch {position:relative; float:left;  margin:0 0 0 10px; padding:4px 0 0 0; width:147px; font-size:12px; font-family:gulim; color:#48453b; border:0 none; background:transparent;}
+#TITLESEARCH .btnSearch {position:relative; float:left; margin:0 0 0 10px; padding:0; vertical-align:top; width:23px; height:23px; background:url(http://i1.daumcdn.net/cafeimg/cf_img4/title/b14_4/search_btn.png) no-repeat;}
+* html #TITLESEARCH .btnSearch {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://i1.daumcdn.net/cafeimg/cf_img4/title/b14_4/search_btn.png, sizingMethod=crop);}
+#TITLEBACKGROUND {height: 185px;}   #TITLEBACKGROUND {background-image: url(http://cfile270.uf.daum.net/image/2748034750E7E73E0DA9D9);} #TITLEBACKGROUND {background-color: transparent;} #TITLEBACKGROUND {background-position: left top;} #TITLEBACKGROUND {background-repeat: repeat;}
+#TITLECAFENAME {position:absolute; top:0px; left:0px; z-index:202;}  #TITLECAFENAME h1 {display: block; font-family:dotum; font-size:17px; color: #333333;} #TITLECAFENAME h1 a {font-family:dotum; font-size:17px; color: #333333; text-decoration:none;} #TITLECAFENAME img {display: none;}
+#TITLECAFEADDRESS {position:absolute; top:0px; left:0px; z-index:203;}  #TITLECAFEADDRESS h2 {display: block; font-family:dotum; font-size:11px; color: #bbbbbb;} #TITLECAFEADDRESS h2 a {font-family:dotum; font-size:11px; color: #bbbbbb; text-decoration:none;} #TITLECAFEADDRESS img {display: none;}
+#TITLEMENUGROUP {z-index:201; top:148px; left:0px;} #TITLEMENUGROUP {background-color:transparent;} #TITLEMENUGROUP li a {color:#670000;} #TITLEMENUGROUP li.mbar {color:#670000;}  #TITLEMENUGROUP li.on a {color:#002266;}
+#TITLESEARCH {top:156px; left:774px; z-index:205;}
+#TITLECAFEINFO {top:0px; left:0px; z-index:204;}
+
+
+
+
+

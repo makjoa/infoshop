@@ -1,0 +1,56 @@
+<div id="cHeader" class="cafeHeader">
+    <h1>
+    <a class="daumLogo" href="http://www.daum.net/?nil_profile=daum&nil_src=cafe" title="Daum"><img src="<%=request.getContextPath()%>/common/daum/cafe/img_daum.gif" width="62" height="26" alt="Daum"></a>
+    <a class="serviceLogo" href="http://cafe.daum.net/?nil_profile=title&nil_src=cafe" title="카페">카페</a>
+    </h1>
+    <h2>관련 서비스</h2>
+    <ul class="relatedsvcs">
+        <li class="blog"><a href="http://blog.daum.net/?t__nil_logo=blog" title="블로그">블로그</a></li>
+        <li class="tistory"><a href="http://www.tistory.com/?t__nil_navi=tistory" target="_blank" title="티스토리">티스토리</a></li>
+        <li class="view"><a href="http://v.daum.net/?t__nil_navi=view" title="뷰">뷰</a></li>
+        <li class="yozm"><a href="http://yozm.daum.net/?t__nil_navi=yozm" title="yozm">yozm</a></li>
+        <li class="widgetbank"><a href="http://widgetbank.daum.net/?t__nil_navi=widgetbank" title="위젯뱅크">위젯뱅크</a></li>
+    </ul>
+    <h2>검색</h2>
+    <form id="daumSearch" name="daumSearch" action="emailCheck" onsubmit="return checkSubmit(this)">
+        <div class="searchbar">
+            <p id="daumSearchOptionLayer">
+                <a href="http://cafe.daum.net/_c21_/myalimi_main?t__nil_navi=mycafe#+++" onclick="return false;">카페검색</a><a href="http://cafe.daum.net/_c21_/myalimi_main?t__nil_navi=mycafe#+++name" onclick="return false;">카페이름</a><a href="http://cafe.daum.net/_c21_/myalimi_main?t__nil_navi=mycafe#+++board" onclick="return false;">카페글</a>
+            </p>
+            <div class="option" id="daumSearchOption">
+                카페검색
+            </div>
+            <select id="daumSearchOptionSelect" name="">
+                <option value="">카페검색</option>
+                <option value="name">카페이름</option>
+                <option value="board">카페글</option>
+            </select>
+            <input type="text" class="search" id="q" name="email" autocomplete="off">
+            <input type="button" id="daumSuggest" value="서제스트 보기" title="서제스트 보기">
+        </div>
+        <input type="hidden" name="" value="cafe">
+        <input type="hidden" name="" value="section">
+        <input type="hidden" name="" value="daumsec">
+        <input type="hidden" name="" value="10">
+        <input type="hidden" name="" value="vsearch">
+        <input type="hidden" name="" value="cafe">
+        <input type="submit" id="daumBtnSearch" value="검색">
+        <input type="button" id="daumBtnSearchAll" value="My소셜 검색" onclick="goMySocial();">
+    </form>
+    <h2>목차</h2>
+    <div class="gnb">
+        <!-- 로고데코 영역 -->
+        <a href="http://hope.daum.net/accessory/bankbook/list.daum?fancafeflag=1&keepScroll=523" class="logodeco" style="width: 220px; height: 52px;" target="_new"><img src="<%=request.getContextPath()%>/common/daum/cafe/121220_cafetopbar.GIF" width="220" height="52" alt=""></a>
+        <!-- 로고데코 영역 -->
+        <ul id="cafe-gnb" class="mycafe ">
+            <li class="cafehome"><a title="카페 홈" href="http://cafe.daum.net/?t__nil_navi=cafe">카페 홈</a></li>
+            <li class="mycafe"><a title="내 카페" href="<%=request.getContextPath()%>/common/daum/cafe/Daum 카페.htm">내 카페</a></li>
+            <li class="cafecategory"><a title="카테고리" href="http://cafe.daum.net/_ranking/rank_top100_1.html?t__nil_navi=cate">카테고리</a></li>
+            <li class="vipcafe"><a title="우수카페" href="http://cafe.daum.net/_c21_/bestcafe?t__nil_navi=vipcafe">우수카페</a></li>
+            <li class="fancafe"><a title="팬카페" href="http://cafe.daum.net/brand/brandstar.html?t__nil_navi=community">팬카페</a><em class="new">new</em></li>
+            <li class="qnacafe"><a title="지식카페" href="http://cafe.daum.net/_c21_/official_qna_cafe?t__nil_navi=officialqna">지식카페</a></li>
+            <li class="cafeskin"><a title="카페스킨" href="http://cafe.daum.net/_c21_/recommset_list?t__nil_navi=recommset">카페스킨</a></li>
+            <li class="cafegame"><a title="카페게임" href="http://cafe.daum.net/_c21_/game_home?t__nil_navi=cafegame">카페게임</a></li>
+        </ul>
+    </div>
+</div>
