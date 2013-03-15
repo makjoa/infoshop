@@ -1,0 +1,185 @@
+<xml version="1.0">
+  <Player>
+    <General>
+      <GameDate Value="14/7/2012" />
+      <Name Value="Ronaldinho Gaúcho" />
+      <UID Value="3301294" />
+      <NationID Value="1651" />
+      <Born Value="1980-03-21" />
+      <Age Value="32" />
+      <IntCaps Value="94" />
+      <IntGoals Value="33" />
+      <U21Caps Value="21" />
+      <U21Goals Value="16" />
+      <WorldReputation Value="7250" />
+      <HomeReputation Value="8250" />
+      <CurrentReputation Value="8250" />
+      <PA Value="190" />
+      <CA Value="155" />
+      <Price Value="3403043" />
+      <Height Value="182" />
+      <Weight Value="80" />
+      <PositionsString Value="AM RLC" />
+    </General>
+    <Attributes>
+      <GoalKeeperAttributes>
+        <AerialAbility Value="5" />
+        <CommandOfArea Value="2" />
+        <Communication Value="2" />
+        <Eccentricity Value="2" />
+        <Handling Value="4" />
+        <Kicking Value="2" />
+        <OneOnOnes Value="3" />
+        <Reflexes Value="9" />
+        <RushingOut Value="2" />
+        <TendencyToPunch Value="6" />
+        <Throwing Value="7" />
+        <MemoryAddress_Unsigned Value="1192971928" />
+      </GoalKeeperAttributes>
+      <TechnicalAttributes>
+        <Corners Value="15" />
+        <Crossing Value="17" />
+        <Dribbling Value="19" />
+        <Finishing Value="13" />
+        <FirstTouch Value="18" />
+        <Freekicks Value="16" />
+        <Heading Value="13" />
+        <LongShots Value="15" />
+        <Longthrows Value="13" />
+        <Marking Value="4" />
+        <Passing Value="19" />
+        <PenaltyTaking Value="17" />
+        <Tackling Value="4" />
+        <Technique Value="20" />
+        <MemoryAddress_Unsigned Value="1192971928" />
+      </TechnicalAttributes>
+      <MentalAttributes>
+        <Aggression Value="8" />
+        <Anticipation Value="12" />
+        <Bravery Value="10" />
+        <Composure Value="12" />
+        <Concentration Value="8" />
+        <Creativity Value="20" />
+        <Decisions Value="14" />
+        <Determination Value="9" />
+        <Flair Value="20" />
+        <Influence Value="13" />
+        <OffTheBall Value="15" />
+        <Positioning Value="5" />
+        <Teamwork Value="13" />
+        <Workrate Value="8" />
+        <MemoryAddress_Unsigned Value="1192971928" />
+      </MentalAttributes>
+      <PhysicalAttributes>
+        <Acceleration Value="13" />
+        <Agility Value="11" />
+        <Balance Value="13" />
+        <Jumping Value="11" />
+        <LeftFoot Value="13" />
+        <NaturalFitness Value="11" />
+        <Pace Value="13" />
+        <RightFoot Value="20" />
+        <Stamina Value="8" />
+        <Strength Value="11" />
+        <MemoryAddress_Unsigned Value="1192971928" />
+      </PhysicalAttributes>
+      <HiddenAttributes>
+        <Consistency Value="10" />
+        <Dirtiness Value="15" />
+        <ImportantMatches Value="9" />
+        <InjuryProness Value="10" />
+        <Versatility Value="12" />
+        <MemoryAddress_Unsigned Value="1192971928" />
+      </HiddenAttributes>
+      <PersonalityAttributes>
+        <Adaptability Value="16" />
+        <Ambition Value="7" />
+        <Loyalty Value="13" />
+        <Pressure Value="8" />
+        <Professional Value="5" />
+        <Sportsmanship Value="10" />
+        <Temperament Value="15" />
+        <Controversy Value="14" />
+        <MemoryAddress_Unsigned Value="1231250784" />
+      </PersonalityAttributes>
+    </Attributes>
+    <Positions>
+      <Defender Value="1" />
+      <WingBack Value="1" />
+      <Midfielder Value="12" />
+      <AttackingMidfielder Value="20" />
+      <Right Value="15" />
+      <Left Value="19" />
+      <Centre Value="20" />
+      <PositionsDesc Value="AM RLC" />
+      <PositionsDescVal Value="506" />
+      <Goalkeeper Value="1" />
+      <Sweeper Value="1" />
+      <AttackerCentral Value="10" />
+      <AttackingMidCentral Value="20" />
+      <AttackingMidLeft Value="19" />
+      <AttackingMidRight Value="15" />
+      <DefenderCentral Value="1" />
+      <DefenderLeft Value="1" />
+      <DefenderRight Value="1" />
+      <DefensiveMidfielder Value="1" />
+      <MidfielderCentral Value="8" />
+      <MidfielderLeft Value="12" />
+      <MidfielderRight Value="5" />
+      <WingBackLeft Value="1" />
+      <WingBackRight Value="1" />
+      <MemoryAddress_Unsigned Value="1192971928" />
+    </Positions>
+    <PPMs>
+      <PPMVal Value="2233399771265" />
+      <PPM0 Value="1" />
+      <PPM1 Value="0" />
+      <PPM2 Value="0" />
+      <PPM3 Value="0" />
+      <PPM4 Value="0" />
+      <PPM5 Value="0" />
+      <PPM6 Value="0" />
+      <PPM7 Value="1" />
+      <PPM8 Value="0" />
+      <PPM9 Value="0" />
+      <PPM10 Value="0" />
+      <PPM11 Value="0" />
+      <PPM12 Value="0" />
+      <PPM13 Value="0" />
+      <PPM14 Value="0" />
+      <PPM15 Value="0" />
+      <PPM16 Value="0" />
+      <PPM17 Value="0" />
+      <PPM18 Value="0" />
+      <PPM19 Value="0" />
+      <PPM20 Value="0" />
+      <PPM21 Value="0" />
+      <PPM22 Value="0" />
+      <PPM23 Value="0" />
+      <PPM24 Value="1" />
+      <PPM25 Value="0" />
+      <PPM26 Value="0" />
+      <PPM27 Value="0" />
+      <PPM28 Value="0" />
+      <PPM29 Value="0" />
+      <PPM30 Value="0" />
+      <PPM31 Value="0" />
+      <PPM32 Value="0" />
+      <PPM33 Value="0" />
+      <PPM34 Value="0" />
+      <PPM35 Value="1" />
+      <PPM36 Value="0" />
+      <PPM37 Value="0" />
+      <PPM38 Value="0" />
+      <PPM39 Value="0" />
+      <PPM40 Value="0" />
+      <PPM41 Value="1" />
+      <PPM42 Value="0" />
+      <PPM43 Value="0" />
+      <PPM44 Value="0" />
+      <PPM45 Value="0" />
+      <PPM46 Value="0" />
+      <PPM47 Value="0" />
+    </PPMs>
+  </Player>
+</xml>

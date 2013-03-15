@@ -1,0 +1,182 @@
+<rss version="0.91">
+  <Player>
+    <General>
+      <GameDate Value="29/1/2008" />
+      <Name Value="Alessandro Del Piero" />
+      <UID Value="8074" />
+      <NationID Value="776" />
+      <Born Value="1974-11-09" />
+      <Age Value="33" />
+      <IntCaps Value="89" />
+      <IntGoals Value="27" />
+      <U21Caps Value="12" />
+      <U21Goals Value="3" />
+      <WorldRep Value="7396" />
+      <HomeRep Value="8000" />
+      <CurrentRep Value="8000" />
+      <PA Value="188" />
+      <CA Value="172" />
+      <Price Value="40597167" />
+      <Height Value="173" />
+      <Weight Value="73" />
+      <PositionsString Value="AM/S LC" />
+    </General>
+    <Attributes>
+      <GoalKeeperAttributes>
+        <AerialAbility Value="5" />
+        <CommandOfArea Value="5" />
+        <Communication Value="3" />
+        <Eccentricity Value="1" />
+        <Handling Value="1" />
+        <Kicking Value="5" />
+        <OneOnOnes Value="4" />
+        <Reflexes Value="10" />
+        <RushingOut Value="1" />
+        <TendencyToPunch Value="1" />
+        <Throwing Value="3" />
+      </GoalKeeperAttributes>
+      <TechnicalAttributes>
+        <Corners Value="17" />
+        <Crossing Value="18" />
+        <Dribbling Value="18" />
+        <Finishing Value="19" />
+        <FirstTouch Value="19" />
+        <Freekicks Value="20" />
+        <Heading Value="16" />
+        <LongShots Value="17" />
+        <Longthrows Value="12" />
+        <Marking Value="7" />
+        <Passing Value="19" />
+        <PenaltyTaking Value="20" />
+        <Tackling Value="7" />
+        <Technique Value="20" />
+      </TechnicalAttributes>
+      <MentalAttributes>
+        <Aggression Value="13" />
+        <Anticipation Value="15" />
+        <Bravery Value="16" />
+        <Composure Value="18" />
+        <Concentration Value="18" />
+        <Creativity Value="18" />
+        <Decisions Value="16" />
+        <Determination Value="14" />
+        <Flair Value="17" />
+        <Influence Value="20" />
+        <OffTheBall Value="19" />
+        <Positioning Value="11" />
+        <Teamwork Value="18" />
+        <Workrate Value="16" />
+      </MentalAttributes>
+      <PhysicalAttributes>
+        <Acceleration Value="11" />
+        <Agility Value="15" />
+        <Balance Value="13" />
+        <Jumping Value="11" />
+        <LeftFoot Value="15" />
+        <NaturalFitness Value="9" />
+        <Pace Value="11" />
+        <RightFoot Value="20" />
+        <Stamina Value="15" />
+        <Strength Value="15" />
+      </PhysicalAttributes>
+      <HiddenAttributes>
+        <Consistency Value="13" />
+        <Dirtiness Value="9" />
+        <ImportantMatches Value="13" />
+        <InjuryProness Value="14" />
+        <Versatility Value="12" />
+      </HiddenAttributes>
+      <PersonalityAttributes>
+        <Adaptability Value="16" />
+        <Ambition Value="16" />
+        <Loyalty Value="20" />
+        <Pressure Value="13" />
+        <Professional Value="16" />
+        <Sportsmanship Value="16" />
+        <Temperament Value="17" />
+        <Controversy Value="1" />
+      </PersonalityAttributes>
+    </Attributes>
+    <Positions>
+      <PositionsDesc Value="AM/S LC" />
+      <Attacker Value="20" />
+      <AttackingMidfielder Value="16" />
+      <Centre Value="20" />
+      <Defender Value="1" />
+      <DefensiveMidfielder Value="1" />
+      <FreeRole Value="15" />
+      <Goalkeeper Value="1" />
+      <Left Value="16" />
+      <Midfielder Value="15" />
+      <Right Value="11" />
+      <Sweeper Value="1" />
+      <WingBack Value="1" />
+    </Positions>
+    <NewPositions>
+      <AttackerCentral Value="20" />
+      <AttackingMidCentral Value="14" />
+      <AttackingMidLeft Value="16" />
+      <AttackingMidRight Value="11" />
+      <DefenderCentral Value="1" />
+      <DefenderLeft Value="1" />
+      <DefenderRight Value="1" />
+      <DefensiveMidfielderCentral Value="1" />
+      <MidfielderCentral Value="5" />
+      <MidfielderLeft Value="15" />
+      <MidfielderRight Value="7" />
+      <WingBackLeft Value="1" />
+      <WingBackRight Value="1" />
+    </NewPositions>
+    <PPMs>
+      <PPMVal Value="34360265856" />
+      <PPM0 Value="0" />
+      <PPM1 Value="0" />
+      <PPM2 Value="0" />
+      <PPM3 Value="0" />
+      <PPM4 Value="0" />
+      <PPM5 Value="0" />
+      <PPM6 Value="0" />
+      <PPM7 Value="1" />
+      <PPM8 Value="0" />
+      <PPM9 Value="0" />
+      <PPM10 Value="1" />
+      <PPM11 Value="1" />
+      <PPM12 Value="0" />
+      <PPM13 Value="0" />
+      <PPM14 Value="0" />
+      <PPM15 Value="0" />
+      <PPM16 Value="0" />
+      <PPM17 Value="0" />
+      <PPM18 Value="0" />
+      <PPM19 Value="1" />
+      <PPM20 Value="0" />
+      <PPM21 Value="0" />
+      <PPM22 Value="0" />
+      <PPM23 Value="0" />
+      <PPM24 Value="0" />
+      <PPM25 Value="0" />
+      <PPM26 Value="0" />
+      <PPM27 Value="0" />
+      <PPM28 Value="0" />
+      <PPM29 Value="0" />
+      <PPM30 Value="0" />
+      <PPM31 Value="0" />
+      <PPM32 Value="0" />
+      <PPM33 Value="0" />
+      <PPM34 Value="0" />
+      <PPM35 Value="1" />
+      <PPM36 Value="0" />
+      <PPM37 Value="0" />
+      <PPM38 Value="0" />
+      <PPM39 Value="0" />
+      <PPM40 Value="0" />
+      <PPM41 Value="0" />
+      <PPM42 Value="0" />
+      <PPM43 Value="0" />
+      <PPM44 Value="0" />
+      <PPM45 Value="0" />
+      <PPM46 Value="0" />
+      <PPM47 Value="0" />
+    </PPMs>
+  </Player>
+</rss>

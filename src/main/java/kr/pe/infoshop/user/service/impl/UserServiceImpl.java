@@ -14,7 +14,7 @@ public class UserServiceImpl extends SqlSessionDaoSupport implements UserService
 			
 	public User loginCheck(User user) {
 		
-		User getUser = (User)getSqlSession().selectOne("loginProcess", user);
+		User getUser = (User)getSqlSession().selectOne("user.loginProcess", user);
 				
 		return getUser;
 	}

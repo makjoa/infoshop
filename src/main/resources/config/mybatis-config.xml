@@ -15,8 +15,9 @@
     </typeAliases>
   
     <mappers>  
-        <mapper resource="kr/pe/infoshop/board/sql/article-sql.xml"/>
-        <mapper resource="kr/pe/infoshop/user/sql/user-sql.xml"/>  
+        <mapper resource="kr/pe/infoshop/map/article-sql.xml"/>
+        <mapper resource="kr/pe/infoshop/map/user-sql.xml"/>
+        <mapper resource="kr/pe/infoshop/map/people-sql.xml"/>
     </mappers>  
   
 </configuration> 

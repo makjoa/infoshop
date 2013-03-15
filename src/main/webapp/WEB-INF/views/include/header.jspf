@@ -29,6 +29,8 @@
 		<script type="text/javascript" src="<%=request.getContextPath()%>/common/js/jquery-1.9.0.min.js"></script>
 		<script type="text/javascript" src="<%=request.getContextPath()%>/resources/vojs/vo.min.js"></script>
 		<script type="text/javascript" src="<%=request.getContextPath()%>/resources/bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="<%=request.getContextPath()%>/common/js/jquery.xml.js"></script>
+		<script type="text/javascript" src="<%=request.getContextPath()%>/common/js/people.js"></script>
 		<!-- 
 		<script type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/jigu.min.js"></script>
 		<script type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/common.js"></script>
@@ -54,7 +56,7 @@
 				<div class="container">
 					<ul class="nav js-global-actions" id="global-actions">
 						<li id="global-nav-home" class="home" data-global-action="home">
-						<a class="js-nav" href="/infoshop" data-component-term="home_nav" data-nav="home" title="Home">
+						<a class="js-nav" href="/" data-component-term="home_nav" data-nav="home" title="Home">
 						<span class="new-wrapper">
 						<i class="bird-topbar-etched"></i>
 						<i class="nav-new"></i>
@@ -79,7 +81,7 @@
 						</a>
 						</li>
 						<li class="topics" data-global-action="discover">
-						<a class="js-nav" href="/infoshop/info" data-component-term="discover_nav" data-nav="discover" title="Discover">
+						<a class="js-nav" href="/info" data-component-term="discover_nav" data-nav="discover" title="Discover">
 						<span class="new-wrapper"><i class="nav-topics"></i><i class="nav-new"></i></span>
 						<span class="text">정보</span>
 						<span class="caret"></span>
@@ -91,10 +93,15 @@
 						</a>
 						</li>
 						<li class="profile" data-global-action="profile">
-						<a class="js-nav" href="javascript:$('#facebook-login-form').submit();" data-component-term="profile_nav" data-nav="profile" title="Me">
-						<span class="new-wrapper"><i class="nav-me"></i><i class="nav-new"></i></span><span class="text">인물</span>
+						<a class="js-nav" href="/tatics" data-component-term="profile_nav" data-nav="profile" title="Me">
+						<span class="new-wrapper"><i class="nav-me"></i><i class="nav-new"></i></span><span class="text">전술</span>
 						</a>
 						</li>						
+						<li class="profile" data-global-action="profile">
+						<a class="js-nav" href="/people/form" data-component-term="profile_nav" data-nav="profile" title="Me">
+						<span class="new-wrapper"><i class="nav-me"></i><i class="nav-new"></i></span><span class="text">인물</span>
+						</a>
+						</li>
 					</ul>
 					<div class="pull-right">
 						<c:if test="${empty userInfo}">
@@ -110,12 +117,12 @@
 								</li>
 								<li>
 								<!-- FACEBOOK login -->
-								<form id="facebook-login-form" action="${request.contextPath}/infoshop/signin" method="POST" class="hidden">
+								<form id="facebook-login-form" action="${request.contextPath}/signin/facebook" method="POST" class="hidden">
 							    </form>								
 								<!-- TWITTER login -->
 								<form id="twitter-login-form" action="${request.contextPath}/signin/twitter" method="POST" class="hidden">
 								</form>
-								<form:form modelattribute="user" action="/infoshop/login" cssclass="js-signin signin" method="post">
+								<form:form modelattribute="user" action="/login" cssclass="js-signin signin" method="post">
 								<fieldset class="textbox">
 									<label class="username js-username">
 									<span>아이디 또는 이메일</span>
