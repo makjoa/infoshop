@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/javajigi/slipp.git/!svn/ver/234/trunk/src/main/lib
+END
+org.eclipse.mylyn.wikitext.core_1.7.0.I20120625-0903.jar
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/javajigi/slipp.git/!svn/ver/40/trunk/src/main/lib/org.eclipse.mylyn.wikitext.core_1.7.0.I20120625-0903.jar
+END
+org.eclipse.mylyn.wikitext.core_1.7.0.I20120625-0903-source.jar
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/javajigi/slipp.git/!svn/ver/40/trunk/src/main/lib/org.eclipse.mylyn.wikitext.core_1.7.0.I20120625-0903-source.jar
+END
+deploy-lib.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/javajigi/slipp.git/!svn/ver/153/trunk/src/main/lib/deploy-lib.sh
+END
+deploy-lib.bat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/javajigi/slipp.git/!svn/ver/234/trunk/src/main/lib/deploy-lib.bat
+END
+org.eclipse.mylyn.wikitext.confluence.core_1.7.0.I20120625-0903.jar
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/javajigi/slipp.git/!svn/ver/40/trunk/src/main/lib/org.eclipse.mylyn.wikitext.confluence.core_1.7.0.I20120625-0903.jar
+END
+org.eclipse.mylyn.wikitext.confluence.core_1.7.0.I20120625-0903-source.jar
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/javajigi/slipp.git/!svn/ver/40/trunk/src/main/lib/org.eclipse.mylyn.wikitext.confluence.core_1.7.0.I20120625-0903-source.jar
+END

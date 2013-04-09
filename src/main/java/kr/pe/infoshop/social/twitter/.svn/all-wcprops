@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/SpringSource/spring-social-samples.git/!svn/ver/242/trunk/spring-social-showcase-xml/src/main/java/org/springframework/social/showcase/twitter
+END
+TwitterMessageController.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/SpringSource/spring-social-samples.git/!svn/ver/242/trunk/spring-social-showcase-xml/src/main/java/org/springframework/social/showcase/twitter/TwitterMessageController.java
+END
+TwitterTimelineController.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/SpringSource/spring-social-samples.git/!svn/ver/242/trunk/spring-social-showcase-xml/src/main/java/org/springframework/social/showcase/twitter/TwitterTimelineController.java
+END
+TwitterFriendsController.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/SpringSource/spring-social-samples.git/!svn/ver/242/trunk/spring-social-showcase-xml/src/main/java/org/springframework/social/showcase/twitter/TwitterFriendsController.java
+END
+MessageForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/SpringSource/spring-social-samples.git/!svn/ver/242/trunk/spring-social-showcase-xml/src/main/java/org/springframework/social/showcase/twitter/MessageForm.java
+END
+TwitterSearchController.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/SpringSource/spring-social-samples.git/!svn/ver/242/trunk/spring-social-showcase-xml/src/main/java/org/springframework/social/showcase/twitter/TwitterSearchController.java
+END
+TweetAfterConnectInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/SpringSource/spring-social-samples.git/!svn/ver/242/trunk/spring-social-showcase-xml/src/main/java/org/springframework/social/showcase/twitter/TweetAfterConnectInterceptor.java
+END
+TwitterTrendsController.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/SpringSource/spring-social-samples.git/!svn/ver/242/trunk/spring-social-showcase-xml/src/main/java/org/springframework/social/showcase/twitter/TwitterTrendsController.java
+END
+TwitterProfileController.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/SpringSource/spring-social-samples.git/!svn/ver/242/trunk/spring-social-showcase-xml/src/main/java/org/springframework/social/showcase/twitter/TwitterProfileController.java
+END

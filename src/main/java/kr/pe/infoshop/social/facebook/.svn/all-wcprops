@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/SpringSource/spring-social-samples.git/!svn/ver/242/trunk/spring-social-showcase-xml/src/main/java/org/springframework/social/showcase/facebook
+END
+FacebookFeedController.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/SpringSource/spring-social-samples.git/!svn/ver/242/trunk/spring-social-showcase-xml/src/main/java/org/springframework/social/showcase/facebook/FacebookFeedController.java
+END
+FacebookProfileController.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/SpringSource/spring-social-samples.git/!svn/ver/242/trunk/spring-social-showcase-xml/src/main/java/org/springframework/social/showcase/facebook/FacebookProfileController.java
+END
+FacebookFriendsController.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/SpringSource/spring-social-samples.git/!svn/ver/242/trunk/spring-social-showcase-xml/src/main/java/org/springframework/social/showcase/facebook/FacebookFriendsController.java
+END
+FacebookPhotosController.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/SpringSource/spring-social-samples.git/!svn/ver/242/trunk/spring-social-showcase-xml/src/main/java/org/springframework/social/showcase/facebook/FacebookPhotosController.java
+END
+PostToWallAfterConnectInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/SpringSource/spring-social-samples.git/!svn/ver/242/trunk/spring-social-showcase-xml/src/main/java/org/springframework/social/showcase/facebook/PostToWallAfterConnectInterceptor.java
+END
