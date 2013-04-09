@@ -1,14 +1,20 @@
 package kr.pe.infoshop.user.service;
 
+import java.util.HashMap;
+
 import kr.pe.infoshop.user.model.User;
 
 public interface UserService {
 	
-	User loginCheck(User user);
+	User loginCheck(String id, String password);
 	
 	User emailCheck(String email);
 
-	String findByUserId(String userId) throws Exception;
+	User findByUserName(String screen_name);
+	
+	boolean existsUsername(String screen_name);
+	
+	boolean existsEmail(String email);
 	
 	void addUser(User user);
 	

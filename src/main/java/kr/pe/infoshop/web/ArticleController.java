@@ -1,6 +1,7 @@
 package kr.pe.infoshop.web;
 
 
+import java.util.HashMap;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -11,6 +12,7 @@ import kr.pe.infoshop.board.service.ArticleService;
 import kr.pe.infoshop.page.model.Paging;
 import kr.pe.infoshop.page.service.PagingService;
 import kr.pe.infoshop.util.PagingUtil;
+import kr.pe.infoshop.realtimeweb.RealtimeWebServer;
 
 import org.apache.log4j.Logger;
 
@@ -25,16 +27,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 //import org.springframework.web.bind.annotation.RequestParam;
 //import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-
 /**
  * Handles requests for the application home page.
  */
 @Controller
+@RequestMapping("/{m_id}")
 public class ArticleController {
 
 	private int currentPage = 1;			// 현재페이지
@@ -43,11 +46,10 @@ public class ArticleController {
 	private int startArticleNum = 0;		// 시작
 	private int endArticleNum = 0;		// 마지막
 	private int totalNum = 0;				// 총페이지 수
-
+	private int insertCount = 0;				// 등록수
 	@Autowired
 	ArticleService articleService;
 	PagingService pagingService;
-	protected final Logger logger = Logger.getLogger(getClass());
 
 	/**
 	 * URL매핑 테스트
@@ -59,7 +61,7 @@ public class ArticleController {
 	 * @return
 	 */
 
-	@RequestMapping(value = { "/{m_id}/form" } , method = RequestMethod.GET)
+	@RequestMapping(value = { "/form" } , method = RequestMethod.GET)
 	public String form(@PathVariable("m_id") String m_id, Model model){		
 
 		model.addAttribute("m_id", m_id);
@@ -68,20 +70,23 @@ public class ArticleController {
 
 	}
 
-	@RequestMapping(value = "/{m_id}", method = RequestMethod.POST)
+	@RequestMapping(value = "/write", method = RequestMethod.POST)
 	public String create(@PathVariable("m_id") String m_id, @ModelAttribute("Article") Article article){		
-
-		System.out.println(article.getMb_id());
-		System.out.println(article.getContent());
-		//	String content =  article.getContent().replaceAll("\r\n", "<br />");	
-		//	article.setContent(content);
-		//	article.setBbsId(bbsid);
-		article.setCat_id(m_id);
-		int b = articleService.insertArticle(article);	
-		System.out.println(b);
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		
+		insertCount++;
+		System.out.println(insertCount);
+		article.setCat_name(m_id);
+		articleService.insertArticle(article);
+				
+		map.put("resultData", article);
+		map.put("count", insertCount);
+		articleCount(m_id, map);
 		return "redirect:/"+m_id;
 	}	
-
+	public void articleCount(String m_id, HashMap<String, Object> map) {
+		RealtimeWebServer.send(m_id, m_id, "new", map);
+	}
 
 	@RequestMapping(value = "/bbs/temp", method = RequestMethod.GET)
 	public ModelAndView getList(@PathVariable("bbsid") String bbsid) {
@@ -118,9 +123,9 @@ public class ArticleController {
 
 		ModelAndView mav = new ModelAndView();		
 		Article article = articleService.getArticle(idx);
-		System.out.println(article.getDataNum());
+		System.out.println(article.getNum());
 		mav.addObject("getArticle", article);
-		mav.addObject("getArticleIDX", article.getDataNum());
+		mav.addObject("getArticleIDX", article.getNum());
 		mav.setViewName("/bbs/view");
 
 		return mav;
@@ -167,8 +172,7 @@ public class ArticleController {
 			if(endArticleNum > totalNum) 				
 				endArticleNum = totalNum;
 		}
-		articleList = articleService.getArticleList(startArticleNum, showArticleLimit, type, keyword);
-
+		articleList = articleService.getArticleList(startArticleNum, showArticleLimit, type, keyword);		
 		System.out.println("startArticleNum" + startArticleNum + "\nendArticleNum" + endArticleNum + "\nshowArticleLimit"+ showArticleLimit + "\nshowPageLimit" +showPageLimit);
 		//StringBuffer pageHtml =  pageUtil.getPageHtml(currentPage, totalNum, showArticleLimit, showPageLimit, type, keyword);
 		paging = getPagingList(currentPage, totalNum, showArticleLimit, showPageLimit);
@@ -177,7 +181,7 @@ public class ArticleController {
 		//mav.addObject("pageHtml", pageHtml);
 		mav.addObject("pagingList", paging);
 		mav.setViewName(id+"/article");
-
+		
 		return mav;
 	}
 

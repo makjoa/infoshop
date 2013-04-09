@@ -150,7 +150,7 @@ function create(datanum) {
 				  <div class="timeline-end has-items">
 				    <div class="stream-end">
 				      <div class="stream-end-inner">
-				      <a class="btn primary-btn tweet-action" type="button" href="/infoshop/info/form">글쓰기</a>
+				      <a class="btn primary-btn tweet-action" type="button" href="info/form">글쓰기</a>
 				      </div>
 				    </div>								    
 				  </div>

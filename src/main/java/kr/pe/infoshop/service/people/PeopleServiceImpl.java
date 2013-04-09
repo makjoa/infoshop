@@ -26,9 +26,11 @@ public class PeopleServiceImpl extends SqlSessionDaoSupport implements PeopleSer
 	}
 
 	public void createPeople(HashMap<String, String> map) {
-		getSqlSession().insert("people.createPeople", map);
+		getSqlSession().insert("createPeople", map);
 	}
 	
-	
+	public void createClub(HashMap<String, String> map) {
+		getSqlSession().insert("createClub", map);
+	}
 
 }

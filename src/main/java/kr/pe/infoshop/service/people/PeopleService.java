@@ -13,4 +13,5 @@ public interface PeopleService {
 	
 	public void createPeople(HashMap<String, String> map);
 	
+	public void createClub(HashMap<String, String> map);
 }

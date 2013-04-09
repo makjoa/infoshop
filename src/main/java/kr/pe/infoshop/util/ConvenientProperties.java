@@ -6,8 +6,8 @@ import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 import org.springframework.util.Assert;
 
 /**
@@ -19,7 +19,7 @@ public class ConvenientProperties extends Properties {
 
 	private static final long serialVersionUID = 1L;
 
-	private Logger log = LoggerFactory.getLogger(ConvenientProperties.class);
+	//private Logger log = LoggerFactory.getLogger(ConvenientProperties.class);
 
 	private static Pattern SYSTEM_PROPERTY_NAME_PATTERN = Pattern.compile("\\$\\{([\\w\\.]+)\\}");
 
@@ -51,7 +51,7 @@ public class ConvenientProperties extends Properties {
 		String sysPropertyName = matcher.group(1);
 		String sysPropertyValue = System.getProperty(sysPropertyName);
 
-		log.debug("sysProperty Name: {}, Value: {}", sysPropertyName, sysPropertyValue);
+		//log.debug("sysProperty Name: {}, Value: {}", sysPropertyName, sysPropertyValue);
 		if (sysPropertyValue == null) {
 			throw new NullPointerException(sysPropertyName + " 이 존재하지 않습니다.");
 		}
@@ -102,13 +102,13 @@ public class ConvenientProperties extends Properties {
 	}
 
 	public void logProperties() {
-		if (log.isDebugEnabled()) {
-			StringWriter sw = new StringWriter();
-			PrintWriter pw = new PrintWriter(sw);
-			this.list(pw);
-
-			log.debug("Convinient Properties loaded : {}", sw.toString());
-			pw.close();
-		}
+//		if (log.isDebugEnabled()) {
+//			StringWriter sw = new StringWriter();
+//			PrintWriter pw = new PrintWriter(sw);
+//			this.list(pw);
+//
+//			log.debug("Convinient Properties loaded : {}", sw.toString());
+//			pw.close();
+//		}
 	}
 }

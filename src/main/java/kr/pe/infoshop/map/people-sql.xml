@@ -7,14 +7,87 @@
 
       <!-- 회원 등록 -->
     <insert id="createPeople" parameterType="hashmap">
-        INSERT INTO PEOPLE (
-              unique_id, full_name, date_of_birth, nation
-            , height, weight)
+        INSERT INTO PLAYER (		
+			UNIQUE_ID,
+			CLUB_ID,
+			NAME,
+			NATION,
+			CLUB,
+			AGE,
+			POSITION,
+			INT_CAPS,
+			INT_GOALS,
+			DATE_OF_BIRTH,
+			BASED,
+			DIVISION,
+			JOINED_CLUB,
+			SQUAD
+            )
         values (
-              #{UID}, #{Name}, #{Born}, #{NationID}
-              , #{Height}, #{Weight})
+			#{UniqueID},
+			#{ClubID},
+			#{Name},
+			#{Nation},
+			#{Club},
+			#{Age},
+			#{Position},
+			#{IntCaps},
+			#{IntGoals},
+			#{DateOfBirth},
+			#{Based},
+			#{Division},
+			#{JoinedClub},
+			#{Squad}
+			)
     </insert>
 
+      <!-- 회원 등록 -->
+    <insert id="createClub" parameterType="hashmap">
+        INSERT INTO CLUB (
+			UNIQUE_ID,
+			DIVISION_ID,
+			NAME,
+			NATION,
+			DIVISION,
+			REP,
+			AV_AGE,
+			BALANCE,
+			TRN_BUDGET_S,
+			TRN_BUDGET_R,
+			WAGE_BUDGET,
+			STATUS,
+			TF,
+			YA,
+			YF,
+			STAD_CAP,
+			AV_ATT,
+			MIN_ATT,
+			MAX_ATT,
+			RATING,
+			POT_RATING)
+        values (
+			#{UniqueID},
+			#{DivisionID},
+			#{Name},
+			#{Nation},
+			#{Division},
+			#{Rep},
+			#{AvAge},
+			#{Balance},
+			#{TrnBudgetS},
+			#{TrnBudgetR},
+			#{WageBudget},
+			#{Status},
+			#{TF},
+			#{YA},
+			#{YF},			
+			#{StadCap},
+			#{AvAtt},
+			#{MinAtt},
+			#{MaxAtt},
+			#{Rating},
+			#{PotRating})
+    </insert>
 
     <!-- 로그인 체크   -->
     <select id="loginProcess" parameterType="User" resultType="User">        

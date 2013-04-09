@@ -49,7 +49,7 @@ function fnCmdSave() {
 </head>
 <body>
 
-<form:form id="Article" name="Article" action="/infoshop/${m_id}" method="post">
+<form:form id="Article" name="Article" action="/${m_id}/write" method="post">
 						<input type="hidden" name="m_id" id="m_id" value="${m_id}"> <!-- 카테고리 아이디 -->
                         <input type="hidden" name="mb_id" id="mb_id" <c:choose><c:when test="${empty userInfo}">value="makjoa"</c:when><c:otherwise> value="${userInfo.id}"</c:otherwise></c:choose>>                                                                         
                         <input type="hidden" name="email" id=""email"" value="jpbabo@nate.com"> <!-- 작성자 -->    

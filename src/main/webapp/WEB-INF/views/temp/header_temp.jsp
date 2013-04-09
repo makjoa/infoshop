@@ -27,6 +27,17 @@
 		<script charset="UTF-8" type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/tiara.min.js"></script>
 		<script id="PersonalScript" type="text/javascript" src="<%=request.getContextPath()%>/common/daum/cafe/allcount_hdn"></script>
 		<script type="text/javascript" charset="utf-8" defer="" id="breakingNewsSearchCallBack" src="<%=request.getContextPath()%>/common/daum/js/breakingnews.js"></script>
+		
+        <!-- 
+        <script type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/jigu.min.js"></script>
+        <script type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/common.js"></script>
+        <script type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/suggest.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/util_gzip.js"></script>
+        <script type="text/javascript" id="imideo-extension-info">var imideo_extension=true;</script>
+        <script charset="UTF-8" type="text/javascript" src="<%=request.getContextPath()%>/common/daum/js/tiara.min.js"></script>
+        <script id="PersonalScript" type="text/javascript" src="<%=request.getContextPath()%>/common/daum/cafe/allcount_hdn"></script>
+        <script type="text/javascript" charset="utf-8" defer="" id="breakingNewsSearchCallBack" src="<%=request.getContextPath()%>/common/daum/js/breakingnews.js"></script>
+        --> 		
   </head>
 
 	<body data-spy="scroll" data-target=".bs-docs-sidebar">

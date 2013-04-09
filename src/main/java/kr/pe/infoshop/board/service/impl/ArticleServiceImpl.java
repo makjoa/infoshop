@@ -18,7 +18,6 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class ArticleServiceImpl extends SqlSessionDaoSupport implements ArticleService {
 
-	protected final Logger logger = Logger.getLogger(getClass());
 	private HashMap<String, Object> valueMap = new HashMap<String, Object>();
 
 	public Article select(int idx) { 

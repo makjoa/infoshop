@@ -1,26 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<div class="content-bottom">      
-<div class="module site-footer">
-  <div class="flex-module">
-    <div class="flex-module-inner js-items-container">
-      <ul class="clearfix" style="text-align: center; display: table-column-group;;">
-        <li class="copyright">© 2013 Twitter</li>
-        <li><a href="/about">회사소개</a></li>
-        <li><a href="//support.twitter.com">도움말</a></li>
-        <li><a href="/tos">이용약관</a></li>
-        <li><a href="/privacy">개인정보취급정책</a></li>
-        <li><a href="http://blog.kr.twitter.com">블로그</a></li>
-        <li><a href="http://status.twitter.com">시스템 현황</a></li>
-        <li><a href="/download">애플리케이션</a></li>
-        <li><a href="/about/resources">자료실</a></li>
-        <li><a href="/jobs">인재채용</a></li>
-        <li><a href="https://business.twitter.com/ko/advertise/start">광고주</a></li>
-        <li><a href="https://business.twitter.com/index_ko.html">비즈니스</a></li>
-        <li><a href="http://media.twitter.com">미디어</a></li>
-        <li><a href="//dev.twitter.com">개발자</a></li>
-        <li><a href="/i/directory/profiles">디렉토리</a></li>
-      </ul>
+<div class="content-bottom">
+    <div class="module site-footer">
+        <div class="flex-module">
+            <div class="flex-module-inner js-items-container">
+                <ul class="clearfix" style="text-align: center">
+                    <li class="copyright">© 2013 FOOTBALL TALK</li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 </div>

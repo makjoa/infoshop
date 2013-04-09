@@ -6,6 +6,14 @@ import java.util.Date;
 import java.util.List;
 
 
+import javax.validation.constraints.*;
+
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.beans.factory.annotation.Value;
+
+
 import kr.pe.infoshop.util.CommonUtil;
 
 /**
@@ -13,14 +21,18 @@ import kr.pe.infoshop.util.CommonUtil;
  */
 public class User {
 	/**
-	 * @uml.property  name="id"
+	 * @uml.property  name="username"
 	 */
-	private String id;
+	@NotEmpty
+	@Size(min = 2, max = 30)
+	@Pattern(regexp = "[_a-z0-9-]*")
+	private String username;
 	/**
 	 * @uml.property  name="name"
 	 */
+	@NotEmpty
+	@Size(min = 2, max = 30)
 	private String name;
-	/**
 	/**
 	 * @uml.property  name="nickname"
 	 */
@@ -28,15 +40,22 @@ public class User {
 	/**
 	 * @uml.property  name="password"
 	 */
+	@NotEmpty
+	@Size(min = 2, max = 30)
 	private String password;
 	/**
 	 * @uml.property  name="email"
 	 */
-	private String email;
+	@NotEmpty
+	@Size(min = 2, max = 30)
+	private String passwordConfirm;
 	/**
-	 * @uml.property  name="homepage"
+	 * @uml.property  name="email"
 	 */
-	private String homepage;
+	@NotEmpty
+	@Size(max = 320)
+	@Email
+	private String email;
 	/**
 	 * @uml.property  name="joindate"
 	 */
@@ -60,22 +79,23 @@ public class User {
 	/**
 	 * @uml.property  name="role"
 	 */
+	private long unique_id;
+	
 	private ArrayList<String>   role;
 
 
 	public User() {}
 
 
-	public User(String id, String name, String nickname, String password,
-			String email, String homepage, Date joindate, String profile,
+	public User(String username, String name, String nickname, String password,
+			String email, Date joindate, String profile,
 			String mailing, long point, long sid, ArrayList<String> role) {
 		super();
-		this.id = id;
+		this.username = username;
 		this.name = name;
 		this.nickname = nickname;
 		this.password = password;
 		this.email = email;
-		this.homepage = homepage;
 		this.joindate = joindate;
 		this.profile = profile;
 		this.mailing = mailing;
@@ -90,8 +110,8 @@ public class User {
 	 * @param id
 	 * @uml.property  name="id"
 	 */
-	public void setId(String id) {
-		this.id = id;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	/**
@@ -125,14 +145,6 @@ public class User {
 		this.email = email;
 	}
 	/**
-	 * Sets the homepage.
-	 * @param homepage  The homepage to set
-	 * @uml.property  name="homepage"
-	 */
-	public void setHomepage(String homepage) {
-		this.homepage = homepage;
-	}
-	/**
 	 * Sets the password.
 	 * @param password  The password to set
 	 * @uml.property  name="password"
@@ -161,8 +173,8 @@ public class User {
 	 * @return
 	 * @uml.property  name="id"
 	 */
-	public String getId() {
-		return this.id;
+	public String getUsername() {
+		return this.username;
 	}
 
 	/**
@@ -195,15 +207,6 @@ public class User {
 	 */
 	public String getEmail() {
 		return this.email;
-	}
-
-	/**
-	 * Returns the homepage.
-	 * @return  String
-	 * @uml.property  name="homepage"
-	 */
-	public String getHomepage() {
-		return homepage;
 	}
 
 	/**
@@ -281,12 +284,15 @@ public class User {
 	public void setSid(long sid) {
 		this.sid = sid;
 	}
+	public String getPasswordConfirm() {
+		return passwordConfirm;
+	}
 
-	/**
-	 * Setter of the property <tt>sid</tt>
-	 * @param sid  The sid to set.
-	 * @uml.property  name="sid"
-	 */
+
+	public void setPasswordConfirm(String passwordConfirm) {
+		this.passwordConfirm = passwordConfirm;
+	}    
+	
 	public boolean isAccountNonExpired() 
 	{
 		return true;
@@ -313,9 +319,6 @@ public class User {
 		int result = 1;
 		result = prime * result + ((email == null) ? 0 : email.hashCode());
 		result = prime * result
-				+ ((homepage == null) ? 0 : homepage.hashCode());
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		result = prime * result
 				+ ((joindate == null) ? 0 : joindate.hashCode());
 		result = prime * result + ((mailing == null) ? 0 : mailing.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
@@ -323,9 +326,13 @@ public class User {
 				+ ((nickname == null) ? 0 : nickname.hashCode());
 		result = prime * result
 				+ ((password == null) ? 0 : password.hashCode());
+		result = prime * result
+				+ ((passwordConfirm == null) ? 0 : passwordConfirm.hashCode());
 		result = prime * result + (int) (point ^ (point >>> 32));
 		result = prime * result + ((profile == null) ? 0 : profile.hashCode());
 		result = prime * result + ((role == null) ? 0 : role.hashCode());
+		result = prime * result
+				+ ((username == null) ? 0 : username.hashCode());
 		result = prime * result + (int) (sid ^ (sid >>> 32));
 		return result;
 	}
@@ -344,30 +351,75 @@ public class User {
 				return false;
 		} else if (!email.equals(other.email))
 			return false;
-		if (id == null) {
-			if (other.id != null)
+		if (joindate == null) {
+			if (other.joindate != null)
 				return false;
-		} else if (!id.equals(other.id))
+		} else if (!joindate.equals(other.joindate))
+			return false;
+		if (mailing == null) {
+			if (other.mailing != null)
+				return false;
+		} else if (!mailing.equals(other.mailing))
 			return false;
 		if (name == null) {
 			if (other.name != null)
 				return false;
 		} else if (!name.equals(other.name))
 			return false;
+		if (nickname == null) {
+			if (other.nickname != null)
+				return false;
+		} else if (!nickname.equals(other.nickname))
+			return false;
 		if (password == null) {
 			if (other.password != null)
 				return false;
 		} else if (!password.equals(other.password))
+			return false;
+		if (passwordConfirm == null) {
+			if (other.passwordConfirm != null)
+				return false;
+		} else if (!passwordConfirm.equals(other.passwordConfirm))
+			return false;
+		if (point != other.point)
+			return false;
+		if (profile == null) {
+			if (other.profile != null)
+				return false;
+		} else if (!profile.equals(other.profile))
+			return false;
+		if (role == null) {
+			if (other.role != null)
+				return false;
+		} else if (!role.equals(other.role))
+			return false;
+		if (username == null) {
+			if (other.username != null)
+				return false;
+		} else if (!username.equals(other.username))
+			return false;
+		if (sid != other.sid)
 			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", nickname=" + nickname
-				+ ", password=" + password + ", email=" + email + ", homepage="
-				+ homepage + ", joindate=" + joindate + ", profile=" + profile
+		return "User [username=" + username + ", name=" + name + ", nickname=" + nickname
+				+ ", password=" + password + ", passwordConfirm=" + passwordConfirm+ ", email=" + email + ", " +"joindate=" + joindate
+				+ ", profile=" + profile
 				+ ", mailing=" + mailing + ", point=" + point + ", sid=" + sid
 				+ ", role=" + role + "]";
-	}    
+	}
+
+
+	public long getUnique_id() {
+		return unique_id;
+	}
+
+
+	public void setUnique_id(long unique_id) {
+		this.unique_id = unique_id;
+	}
+
 }

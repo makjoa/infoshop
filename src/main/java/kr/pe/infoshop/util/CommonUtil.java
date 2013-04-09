@@ -69,7 +69,14 @@ public class CommonUtil {
 	    SimpleDateFormat sdf = new SimpleDateFormat(format);
 		return sdf.format(date);
 	}
-
+	
+	public static String formatDate(String value, String format) {
+	    if(value==null || format == null)
+	        return null;
+	    SimpleDateFormat sdf = new SimpleDateFormat(format);
+		return sdf.format(value);
+	}
+	
 	/**
 	 * Method showHtml. �±� ���̰�, �ٹٲ� ���ڸ� &lt;br> �±׷� ��ȯ
 	 * @param str

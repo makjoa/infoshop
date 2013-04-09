@@ -32,6 +32,21 @@ function doLogin() {
 
     })
 }
+
+function getPassword() {
+	$.ajax({
+		type: 'POST',
+		data: "",
+		dataType: 'text',
+		url: '/news',
+		success: function (returnData, textStatus, xhr) {
+			console.log(returnData);
+		},
+		error: function (xhr, status, e) {
+			alert(e);
+		}		
+	})
+}
     
 function goSearch() {
 	alert("login");

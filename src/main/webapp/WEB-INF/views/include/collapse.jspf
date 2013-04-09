@@ -1,0 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>        
+                  <div id="search" class="accordion-body collapse" style="height: 0px;" data-toggled="collapse">
+                        <div class="content-top">
+                            <div class="module">
+                                <div class="flex-module profile-summary js-profile-summary">
+                                    <h2 class="js-timeline-title">검색</h2>
+                                </div>
+                            </div>
+                        </div>
+                </div>              

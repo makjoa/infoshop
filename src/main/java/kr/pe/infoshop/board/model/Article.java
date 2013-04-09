@@ -6,14 +6,14 @@ import kr.pe.infoshop.util.CommonUtil;
 
 public class Article {
 
-	int id	;
-	int	 datanum;	
+	int id;
+	int	 num;	
 	String reply;	
 	int parent;
 	int is_comment;
 	int	 comment;	
 	String comment_reply;	
-	String	 cat_id;	
+	String	 cat_name;	
 	String	 option;	
 	String	 subject;
 	String	 content;	
@@ -42,11 +42,11 @@ public class Article {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getDataNum() {
-		return datanum;
+	public int getNum() {
+		return num;
 	}
-	public void setDataNum(int datanum) {
-		this.datanum = datanum;
+	public void setNum(int num) {
+		this.num = num;
 	}
 	public String getReply() {
 		return reply;
@@ -78,11 +78,11 @@ public class Article {
 	public void setComment_reply(String comment_reply) {
 		this.comment_reply = comment_reply;
 	}
-	public String getCat_id() {
-		return cat_id;
+	public String getCat_name() {
+		return cat_name;
 	}
-	public void setCat_id(String cat_id) {
-		this.cat_id = cat_id;
+	public void setCat_name(String cat_name) {
+		this.cat_name = cat_name;
 	}
 	public String getOption() {
 		return option;

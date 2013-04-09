@@ -8,16 +8,16 @@
 		 SELECT *  
 		 FROM
 			(SELECT 
-			idx,datanum,reply,parent,
-			is_comment,comment,comment_reply,cat_id,
+			id,num,reply,parent,
+			is_comment,comment,comment_reply,cat_name,
 			subject,content,link1,link2,
 			link1_hit,link2_hit,trackback,
 			hit,good,nogood,mb_id,
 			password,name,email,homepage,
 			datetime,last,ip,
 			DATE_FORMAT(datetime, '%Y%m%d') AS date
-			FROM IS_BOARD DATA ORDER BY DATANUM DESC) core,
-			(SELECT date_format(datetime, '%Y%m%d') dummyDate, count(*) datecnt  FROM is_board
+			FROM ARTICLE DATA ORDER BY num DESC) core,
+			(SELECT date_format(datetime, '%Y%m%d') dummyDate, count(*) datecnt  FROM ARTICLE
  			GROUP BY date_format(datetime, '%Y%m%d')) dummy WHERE core.date = dummy.dummyDate;                
        <!--
         <where> 
@@ -33,7 +33,7 @@
 
     <!-- 전체 레코드 조회   -->
     <select id="getTotalNum" parameterType="HashMap" resultType="int">
-        SELECT COUNT(*) FROM IS_BOARD         
+        SELECT COUNT(*) FROM ARTICLE         
         <where> 
             <if test="type != null and keyword != null">
                 ${type} LIKE ${keyword}
@@ -46,27 +46,27 @@
     <select id="getArticle" parameterType="int" resultType="Article">        
         SELECT 
             * 
-        FROM IS_BOARD                      
-        WHERE DATANUM = #{datanum}        
+        FROM ARTICLE                      
+        WHERE num = #{num}        
     </select>      
     
     <!-- 게시물 등록 -->
-    <insert id="insertArticle" parameterType="Article" keyProperty="datanum">
-        <selectKey keyProperty="datanum" resultType="int" order="BEFORE">
-            SELECT COALESCE(MAX(datanum), 0) + 1 AS datanum 
-            FROM IS_BOARD
+    <insert id="insertArticle" parameterType="Article" keyProperty="num">
+        <selectKey keyProperty="num" resultType="int" order="BEFORE">
+            SELECT COALESCE(MAX(num), 0) + 1 AS num 
+            FROM ARTICLE
         </selectKey>
         
-        INSERT INTO IS_BOARD (
-              datanum, reply, parent, is_comment
-            , comment, comment_reply, cat_id, subject
+        INSERT INTO ARTICLE (
+              num, reply, parent, is_comment
+            , comment, comment_reply, cat_name, subject
             , content , link1, link2, link1_hit
             , link2_hit, trackback, hit, good
             , nogood, mb_id, password, name
             , email, homepage, datetime, last, ip)
         values (
-              #{datanum}, ' ', 0, 0
-            , 0, ' ', #{cat_id}, #{subject}
+              #{num}, ' ', 0, 0
+            , 0, ' ', #{cat_name}, #{subject}
             , #{content}, ' ', ' ', 0
             , 0, ' ', 0, 0
             , 0, #{mb_id}, #{password}, #{name} 
@@ -77,21 +77,21 @@
     <update id="update">
         UPDATE  t_sample
         SET
-              datanum, reply, parent, is_comment
-            , comment, comment_reply, cat_id, subject
+              num, reply, parent, is_comment
+            , comment, comment_reply, cat_name, subject
             , content , link1, link2, link1_hit
             , link2_hit, trackback, hit, good
             , nogood, mb_id, password, name
             , email, homepage, datetime, last, ip)
-        WHERE  datanum    = #{datanum}
+        WHERE  num    = #{num}
     </update>    
     
     
     <!-- 게시물 삭제 -->
     <delete id="deleteArticle" parameterType="int">
         DELETE 
-        FROM    IS_BOARD
-        WHERE  datanum = #{datanum}
+        FROM    ARTICLE
+        WHERE  num = #{num}
     </delete>
  
 </mapper>
